@@ -1,0 +1,89 @@
+pbsxx_disciple_job = {
+    potential = {
+        is_ai = no
+        is_sxx_sect = yes
+    }
+    allow = {
+        is_ai = no
+    }
+    option = {
+        name = "pbsxx_job_all"
+        policy_flags = {
+            pbsxx_job_all
+        }
+        modifier = {
+        }
+        AI_weight = {
+            factor = 100
+        }
+    }
+    option = {
+        name = "pbsxx_job_above_factotum_disciple"
+        policy_flags = {
+            pbsxx_job_above_factotum_disciple
+        }
+        modifier = {
+            job_sxx_factotum_disciple_add = -999
+        }
+    }
+    option = {
+        name = "pbsxx_job_above_external_disciple"
+        policy_flags = {
+            pbsxx_job_above_external_disciple
+        }
+        modifier = {
+            job_sxx_factotum_disciple_add = -999
+            job_sxx_external_disciple_add = -999
+        }
+    }
+    option = {
+        name = "pbsxx_job_above_inner_disciple"
+        policy_flags = {
+            pbsxx_job_above_inner_disciple
+        }
+        modifier = {
+            job_sxx_factotum_disciple_add = -999
+            job_sxx_external_disciple_add = -999
+            job_sxx_inner_disciple_add = -999
+        }
+    }
+    option = {
+        name = "pbsxx_job_above_true_disciple"
+        policy_flags = {
+            pbsxx_job_above_true_disciple
+        }
+        modifier = {
+            job_sxx_factotum_disciple_add = -999
+            job_sxx_external_disciple_add = -999
+            job_sxx_inner_disciple_add = -999
+            job_sxx_true_disciple_add = -999
+        }
+    }
+    option = {
+        name = "pbsxx_job_above_deacon"
+        policy_flags = {
+            pbsxx_job_above_deacon
+        }
+        modifier = {
+            job_sxx_factotum_disciple_add = -999
+            job_sxx_external_disciple_add = -999
+            job_sxx_inner_disciple_add = -999
+            job_sxx_true_disciple_add = -999
+            job_sxx_deacon_add = -999
+        }
+    }
+    option = {
+        name = "pbsxx_job_above_elder"
+        policy_flags = {
+            pbsxx_job_above_elder
+        }
+        modifier = {
+            job_sxx_factotum_disciple_add = -999
+            job_sxx_external_disciple_add = -999
+            job_sxx_inner_disciple_add = -999
+            job_sxx_true_disciple_add = -999
+            job_sxx_deacon_add = -999
+            job_sxx_elder_add = -999
+        }
+    }
+}

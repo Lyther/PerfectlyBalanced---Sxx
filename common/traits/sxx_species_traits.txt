@@ -1,0 +1,596 @@
+trait_sxx_lianqi = {
+	cost = 0
+	potential_crossbreeding_chance = 0.2
+	sorting_priority = 15
+	initial = no
+	randomized = no
+	improves_leaders = yes
+
+	species_potential_add = {
+		always = no
+	}
+	species_possible_add = {
+		always = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+
+	allowed_archetypes = { BIOLOGICAL LITHOID ROBOT MACHINE }
+	custom_tooltip_with_modifiers = sxx_trait_new_pop_auto_remove_tooltip
+	modifier = {
+		planet_jobs_produces_mult = 0.25
+		army_damage_mult = 0.3
+        army_health = 0.3
+		army_morale = 0.3
+		army_morale_damage_mult = 0.1
+		army_collateral_damage_mult = 0.1
+		leader_age = 30
+		pop_environment_tolerance = 0.1
+		pop_happiness = 0.05
+		planet_pops_organics_food_upkeep_mult = 1
+		planet_jobs_upkeep_mult = 0.125
+	}
+	slave_cost = {
+		energy = 2000
+	}
+}
+
+trait_sxx_zhuji = {
+	cost = 0
+	potential_crossbreeding_chance = 0.1
+	sorting_priority = 15
+	initial = no
+	randomized = no
+	improves_leaders = yes
+
+	species_potential_add = {
+		always = no
+	}
+	species_possible_add = {
+		always = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+
+	allowed_archetypes = { BIOLOGICAL LITHOID ROBOT MACHINE }
+	custom_tooltip_with_modifiers = sxx_trait_new_pop_auto_remove_tooltip
+	modifier = {
+		planet_jobs_produces_mult = 0.5
+		army_damage_mult = 1
+        army_health = 1
+		army_morale = 1
+		army_morale_damage_mult = 0.3
+		army_collateral_damage_mult = 0.3
+		leader_age = 100
+		pop_environment_tolerance = 0.2
+		pop_happiness = 0.10
+		planet_pops_organics_food_upkeep_mult = -0.5
+		planet_jobs_upkeep_mult = 0.25
+	}
+	slave_cost = {
+		energy = 3000
+	}
+}
+
+trait_sxx_jindan = {
+	cost = 0
+	potential_crossbreeding_chance = 0
+	sorting_priority = 15
+	initial = no
+	randomized = no
+	improves_leaders = yes
+
+	species_potential_add = {
+		always = no
+	}
+	species_possible_add = {
+		always = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+
+	allowed_archetypes = { BIOLOGICAL LITHOID ROBOT MACHINE }
+	custom_tooltip_with_modifiers = sxx_trait_new_pop_auto_remove_tooltip
+	modifier = {
+		planet_jobs_produces_mult = 1
+		army_damage_mult = 3
+        army_health = 3
+		army_morale = 3
+		army_morale_damage_mult = 1
+		army_collateral_damage_mult = 1
+		leader_age = 300
+		pop_environment_tolerance = 0.4
+		pop_happiness = 0.15
+		planet_pops_organics_food_upkeep_mult = -1
+		planet_jobs_upkeep_mult = 0.5
+	}
+	slave_cost = {
+		energy = 4000
+	}
+}
+
+trait_sxx_yuanying = {
+	cost = 0
+	potential_crossbreeding_chance = 0
+	sorting_priority = 15
+	initial = no
+	randomized = no
+	improves_leaders = yes
+
+	species_potential_add = {
+		always = no
+	}
+	species_possible_add = {
+		always = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+
+	allowed_archetypes = { BIOLOGICAL LITHOID ROBOT MACHINE }
+	custom_tooltip_with_modifiers = sxx_trait_new_pop_auto_remove_tooltip
+	modifier = {
+		planet_jobs_produces_mult = 2
+		army_damage_mult = 10
+        army_health = 10
+		army_morale = 10
+		army_morale_damage_mult = 3
+		army_collateral_damage_mult = 3
+		leader_age = 1000
+		pop_environment_tolerance = 0.8
+		pop_happiness = 0.20
+		planet_pops_organics_food_upkeep_mult = -2
+		planet_jobs_upkeep_mult = 1
+	}
+	slave_cost = {
+		energy = 5000
+	}
+}
+
+trait_sxx_huashen = {
+	cost = 0
+	potential_crossbreeding_chance = 0
+	sorting_priority = 15
+	initial = no
+	randomized = no
+	improves_leaders = yes
+
+	species_potential_add = {
+		always = no
+	}
+	species_possible_add = {
+		always = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+
+	allowed_archetypes = { BIOLOGICAL LITHOID ROBOT MACHINE }
+	custom_tooltip_with_modifiers = sxx_trait_new_pop_auto_remove_tooltip
+	modifier = {
+		planet_jobs_produces_mult = 4
+		army_damage_mult = 30
+        army_health = 30
+		army_morale = 30
+		army_morale_damage_mult = 10
+		army_collateral_damage_mult = 10
+		leader_age = 3000
+		pop_environment_tolerance = 1.6
+		pop_happiness = 0.25
+		planet_pops_organics_food_upkeep_mult = -20
+		planet_jobs_upkeep_mult = 2
+	}
+	slave_cost = {
+		energy = 6000
+	}
+}
+
+trait_sxx_lianxu = {
+	cost = 0
+	potential_crossbreeding_chance = 0
+	sorting_priority = 15
+	initial = no
+	randomized = no
+	improves_leaders = yes
+
+	species_potential_add = {
+		always = no
+	}
+	species_possible_add = {
+		always = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+
+	allowed_archetypes = { BIOLOGICAL LITHOID ROBOT MACHINE }
+	custom_tooltip_with_modifiers = sxx_trait_new_pop_auto_remove_tooltip
+	modifier = {
+		planet_jobs_produces_mult = 8
+		army_damage_mult = 100
+        army_health = 100
+		army_morale = 100
+		army_morale_damage_mult = 30
+		army_collateral_damage_mult = 30
+		leader_age = 10000
+		pop_environment_tolerance = 3.2
+		pop_happiness = 0.30
+		planet_pops_organics_food_upkeep_mult = -40
+		planet_jobs_upkeep_mult = 4
+	}
+	slave_cost = {
+		energy = 7000
+	}
+}
+
+trait_sxx_heti = {
+	cost = 0
+	potential_crossbreeding_chance = 0
+	sorting_priority = 15
+	initial = no
+	randomized = no
+	improves_leaders = yes
+
+	species_potential_add = {
+		always = no
+	}
+	species_possible_add = {
+		always = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+
+	allowed_archetypes = { BIOLOGICAL LITHOID ROBOT MACHINE }
+	custom_tooltip_with_modifiers = sxx_trait_new_pop_auto_remove_tooltip
+	modifier = {
+		planet_jobs_produces_mult = 16
+		army_damage_mult = 300
+        army_health = 300
+		army_morale = 300
+		army_morale_damage_mult = 100
+		army_collateral_damage_mult = 100
+		leader_age = 30000
+		pop_environment_tolerance = 6.4
+		pop_happiness = 0.35
+		planet_pops_organics_food_upkeep_mult = -80
+		planet_jobs_upkeep_mult = 8
+	}
+	slave_cost = {
+		energy = 8000
+	}
+}
+
+trait_sxx_dacheng = {
+	cost = 0
+	potential_crossbreeding_chance = 0
+	sorting_priority = 15
+	initial = no
+	randomized = no
+	improves_leaders = yes
+
+	species_potential_add = {
+		always = no
+	}
+	species_possible_add = {
+		always = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+
+	allowed_archetypes = { BIOLOGICAL LITHOID ROBOT MACHINE }
+	custom_tooltip_with_modifiers = sxx_trait_new_pop_auto_remove_tooltip
+	modifier = {
+		planet_jobs_produces_mult = 32
+		army_damage_mult = 1000
+        army_health = 1000
+		army_morale = 1000
+		army_morale_damage_mult = 300
+		army_collateral_damage_mult = 300
+		leader_age = 100000
+		pop_environment_tolerance = 12.8
+		pop_happiness = 0.40
+		planet_pops_organics_food_upkeep_mult = -160
+		planet_jobs_upkeep_mult = 16
+	}
+	slave_cost = {
+		energy = 9000
+	}
+}
+
+trait_sxx_dujie = {
+	cost = 0
+	potential_crossbreeding_chance = 0
+	sorting_priority = 15
+	initial = no
+	randomized = no
+	improves_leaders = yes
+
+	species_potential_add = {
+		always = no
+	}
+	species_possible_add = {
+		always = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+
+	allowed_archetypes = { BIOLOGICAL LITHOID ROBOT MACHINE }
+	custom_tooltip_with_modifiers = sxx_trait_new_pop_auto_remove_tooltip
+	modifier = {
+		planet_jobs_produces_mult = 64
+		army_damage_mult = 3000
+        army_health = 3000
+		army_morale = 3000
+		army_morale_damage_mult = 1000
+		army_collateral_damage_mult = 1000
+		leader_age = 300000
+		pop_environment_tolerance = 25.6
+		pop_happiness = 0.45
+		planet_pops_organics_food_upkeep_mult = -320
+		planet_jobs_upkeep_mult = 32
+	}
+	slave_cost = {
+		energy = 10000
+	}
+}
+
+trait_sxx_yuhua = {
+	cost = 0
+	potential_crossbreeding_chance = 0
+	sorting_priority = 20
+	initial = no
+	randomized = no
+	infertile = yes
+
+	species_potential_add = {
+		always = no
+	}
+	species_possible_add = {
+		always = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+
+	allowed_archetypes = { BIOLOGICAL LITHOID ROBOT MACHINE }
+	custom_tooltip_with_modifiers = trait_sxx_yuhua_tooltip
+	modifier = {
+		pop_assembly_speed = -100
+	}
+	slave_cost = {
+		energy = 5000
+	}
+}
+
+trait_sxx_linggen = {
+	cost = 0
+	potential_crossbreeding_chance = 0
+	sorting_priority = 12
+	initial = no
+	randomized = no
+
+	species_potential_add = {
+		always = no
+	}
+	species_possible_add = {
+		always = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+
+	allowed_archetypes = { BIOLOGICAL LITHOID ROBOT MACHINE }
+	custom_tooltip_with_modifiers = trait_sxx_linggen_tooltip
+	modifier = {
+		leader_age = -20
+	}
+	slave_cost = {
+		energy = -100
+	}
+}
+
+trait_sxx_potential_depletion = {
+	cost = 0
+	potential_crossbreeding_chance = 0
+	sorting_priority = 10
+	initial = no
+	randomized = no
+
+	species_potential_add = {
+		always = no
+	}
+	species_possible_add = {
+		always = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+
+	custom_tooltip_with_modifiers = sxx_trait_new_pop_auto_remove_tooltip
+
+	modifier = {
+		pop_happiness = -0.05
+	}
+	slave_cost = {
+		energy = -200
+	}
+}
+
+trait_sxx_douluo = {
+	icon = "gfx/interface/icons/traits/trait_weak.dds"
+	cost = 0
+	potential_crossbreeding_chance = 0.5
+	sorting_priority = 5
+	initial = no
+	randomized = no
+
+	species_potential_add = {
+		always = no
+	}
+	species_possible_add = {
+		always = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+
+	allowed_archetypes = { BIOLOGICAL LITHOID ROBOT MACHINE }
+	modifier = {
+		planet_jobs_produces_mult = -0.99
+		army_damage_mult = -0.99
+        army_health = -0.99
+		army_collateral_damage_mult = -0.99
+		leader_age = 100
+		pop_environment_tolerance = -0.99
+		planet_pops_upkeep_mult = -0.99
+		planet_jobs_upkeep_mult = -0.99
+	}
+	triggered_planet_growth_habitability_modifier = {
+		potential = {
+			exists = planet
+			planet = {
+				has_modifier = sxx_douluo_planet_modifier
+			}
+		}
+		pop_environment_tolerance = 1
+	}
+	slave_cost = {
+		energy = -1000
+	}
+}
+
+trait_sxx_douluo_god = {
+	icon = "gfx/interface/icons/traits/trait_weak.dds"
+	cost = 0
+	potential_crossbreeding_chance = 0
+	sorting_priority = 5
+	initial = no
+	randomized = no
+
+	infertile = yes
+	immortal_leaders = yes
+
+	species_potential_add = {
+		always = no
+	}
+	species_possible_add = {
+		always = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+
+	allowed_archetypes = { BIOLOGICAL LITHOID ROBOT MACHINE }
+	modifier = {
+		planet_jobs_produces_mult = -0.9
+		army_damage_mult = -0.9
+        army_health = -0.9
+		army_collateral_damage_mult = -0.9
+		pop_environment_tolerance = -0.9
+		planet_pops_upkeep_mult = -0.99
+		planet_jobs_upkeep_mult = -0.9
+		pop_assembly_speed = -100
+	}
+	triggered_planet_growth_habitability_modifier = {
+		potential = {
+			exists = planet
+			planet = {
+				has_modifier = sxx_douluo_planet_modifier
+			}
+		}
+		pop_environment_tolerance = 1
+	}
+	slave_cost = {
+		energy = -500
+	}
+}
