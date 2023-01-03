@@ -3,6 +3,6 @@ tags={
 	"Balance"
 	"Gameplay"
 }
-name="PerfectlyBlanced - Sxx"
+name="PerfectlyBalanced - Sxx"
 supported_version="3.5.3"
 remote_file_id="2891868717"
