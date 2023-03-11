@@ -1,6 +1,6 @@
 trait_sxx_lianqi = {
 	cost = 0
-	potential_crossbreeding_chance = 0.2
+	potential_crossbreeding_chance = 0
 	sorting_priority = 15
 	initial = no
 	randomized = no
@@ -22,20 +22,46 @@ trait_sxx_lianqi = {
 		always = yes
 	}
 
-	allowed_archetypes = { BIOLOGICAL LITHOID ROBOT MACHINE }
+	opposites = { "PF_trait_core_species" "PF_trait_core_ignore" }
+	allowed_archetypes = {
+		BIOLOGICAL
+		ROBOT
+		MACHINE
+		LITHOID
+		WARSHIPGIRL	#_wsg
+		SHENHAI
+		UNITED_FLEET
+		NANITES_CROP
+		STARSHIPGIRLS	#swg
+		LILY		#突击莉莉
+		KANMUSU		#kc
+		DATEALIVE	#dal
+		KANSEN		#azl
+		Dolls		#灰烬
+		ELF		#带刺
+		Magical_Bitch
+		Magical_Girl
+		NYTO	#涅托
+		DEITY	#ACOT
+	}
 	custom_tooltip_with_modifiers = sxx_trait_new_pop_auto_remove_tooltip
 	modifier = {
+		sxx_planet_jobs_sxx_base_speed_mod_produces_mult = 1
+		pop_category_sxx_xiuxianzhe_sxx_gongfa_produces_mult = 1
+		planet_pops_sxx_stones_upkeep_mult = 1
+		planet_pops_sxx_pills_upkeep_mult = 1
 		planet_jobs_produces_mult = 0.25
 		army_damage_mult = 0.3
         army_health = 0.3
 		army_morale = 0.3
-		army_morale_damage_mult = 0.1
 		army_collateral_damage_mult = 0.1
 		leader_age = 30
 		pop_environment_tolerance = 0.1
-		pop_happiness = 0.05
-		planet_pops_organics_food_upkeep_mult = 1
+		planet_pops_energy_upkeep_mult = 1
+		planet_pops_minerals_upkeep_mult = 1
+		planet_pops_food_upkeep_mult = 1
 		planet_jobs_upkeep_mult = 0.125
+		pop_resettlement_cost_mult = 0.1
 	}
 	slave_cost = {
 		energy = 2000
@@ -44,7 +70,7 @@ trait_sxx_lianqi = {
 
 trait_sxx_zhuji = {
 	cost = 0
-	potential_crossbreeding_chance = 0.1
+	potential_crossbreeding_chance = 0
 	sorting_priority = 15
 	initial = no
 	randomized = no
@@ -66,20 +92,46 @@ trait_sxx_zhuji = {
 		always = yes
 	}
 
-	allowed_archetypes = { BIOLOGICAL LITHOID ROBOT MACHINE }
+	opposites = { "trait_nerve_stapled" "PF_trait_core_species" "PF_trait_core_ignore" }
+	allowed_archetypes = {
+		BIOLOGICAL
+		ROBOT
+		MACHINE
+		LITHOID
+		WARSHIPGIRL	#_wsg
+		SHENHAI
+		UNITED_FLEET
+		NANITES_CROP
+		STARSHIPGIRLS	#swg
+		LILY		#突击莉莉
+		KANMUSU		#kc
+		DATEALIVE	#dal
+		KANSEN		#azl
+		Dolls		#灰烬
+		ELF		#带刺
+		Magical_Bitch
+		Magical_Girl
+		NYTO	#涅托
+		DEITY	#ACOT
+	}
 	custom_tooltip_with_modifiers = sxx_trait_new_pop_auto_remove_tooltip
 	modifier = {
+		sxx_planet_jobs_sxx_base_speed_mod_produces_mult = 3
+		pop_category_sxx_xiuxianzhe_sxx_gongfa_produces_mult = 3
+		planet_pops_sxx_stones_upkeep_mult = 3
+		planet_pops_sxx_pills_upkeep_mult = 3
 		planet_jobs_produces_mult = 0.5
 		army_damage_mult = 1
         army_health = 1
 		army_morale = 1
-		army_morale_damage_mult = 0.3
 		army_collateral_damage_mult = 0.3
 		leader_age = 100
 		pop_environment_tolerance = 0.2
-		pop_happiness = 0.10
-		planet_pops_organics_food_upkeep_mult = -0.5
+		planet_pops_energy_upkeep_mult = -0.5
+		planet_pops_minerals_upkeep_mult = -0.5
+		planet_pops_food_upkeep_mult = -0.5
 		planet_jobs_upkeep_mult = 0.25
+		pop_resettlement_cost_mult = 0.2
 	}
 	slave_cost = {
 		energy = 3000
@@ -110,20 +162,46 @@ trait_sxx_jindan = {
 		always = yes
 	}
 
-	allowed_archetypes = { BIOLOGICAL LITHOID ROBOT MACHINE }
+	opposites = { "trait_nerve_stapled" "PF_trait_core_species" "PF_trait_core_ignore" }
+	allowed_archetypes = {
+		BIOLOGICAL
+		ROBOT
+		MACHINE
+		LITHOID
+		WARSHIPGIRL	#_wsg
+		SHENHAI
+		UNITED_FLEET
+		NANITES_CROP
+		STARSHIPGIRLS	#swg
+		LILY		#突击莉莉
+		KANMUSU		#kc
+		DATEALIVE	#dal
+		KANSEN		#azl
+		Dolls		#灰烬
+		ELF		#带刺
+		Magical_Bitch
+		Magical_Girl
+		NYTO	#涅托
+		DEITY	#ACOT
+	}
 	custom_tooltip_with_modifiers = sxx_trait_new_pop_auto_remove_tooltip
 	modifier = {
+		sxx_planet_jobs_sxx_base_speed_mod_produces_mult = 7
+		pop_category_sxx_xiuxianzhe_sxx_gongfa_produces_mult = 7
+		planet_pops_sxx_stones_upkeep_mult = 7
+		planet_pops_sxx_pills_upkeep_mult = 7
 		planet_jobs_produces_mult = 1
 		army_damage_mult = 3
         army_health = 3
 		army_morale = 3
-		army_morale_damage_mult = 1
 		army_collateral_damage_mult = 1
 		leader_age = 300
 		pop_environment_tolerance = 0.4
-		pop_happiness = 0.15
-		planet_pops_organics_food_upkeep_mult = -1
+		planet_pops_energy_upkeep_mult = -1
+		planet_pops_minerals_upkeep_mult = -1
+		planet_pops_food_upkeep_mult = -1
 		planet_jobs_upkeep_mult = 0.5
+		pop_resettlement_cost_mult = 0.3
 	}
 	slave_cost = {
 		energy = 4000
@@ -154,20 +232,46 @@ trait_sxx_yuanying = {
 		always = yes
 	}
 
-	allowed_archetypes = { BIOLOGICAL LITHOID ROBOT MACHINE }
+	opposites = { "trait_nerve_stapled" "PF_trait_core_species" "PF_trait_core_ignore" }
+	allowed_archetypes = {
+		BIOLOGICAL
+		ROBOT
+		MACHINE
+		LITHOID
+		WARSHIPGIRL	#_wsg
+		SHENHAI
+		UNITED_FLEET
+		NANITES_CROP
+		STARSHIPGIRLS	#swg
+		LILY		#突击莉莉
+		KANMUSU		#kc
+		DATEALIVE	#dal
+		KANSEN		#azl
+		Dolls		#灰烬
+		ELF		#带刺
+		Magical_Bitch
+		Magical_Girl
+		NYTO	#涅托
+		DEITY	#ACOT
+	}
 	custom_tooltip_with_modifiers = sxx_trait_new_pop_auto_remove_tooltip
 	modifier = {
+		sxx_planet_jobs_sxx_base_speed_mod_produces_mult = 15
+		pop_category_sxx_xiuxianzhe_sxx_gongfa_produces_mult = 15
+		planet_pops_sxx_stones_upkeep_mult = 15
+		planet_pops_sxx_pills_upkeep_mult = 15
 		planet_jobs_produces_mult = 2
 		army_damage_mult = 10
         army_health = 10
 		army_morale = 10
-		army_morale_damage_mult = 3
 		army_collateral_damage_mult = 3
 		leader_age = 1000
 		pop_environment_tolerance = 0.8
-		pop_happiness = 0.20
-		planet_pops_organics_food_upkeep_mult = -2
+		planet_pops_energy_upkeep_mult = -2
+		planet_pops_minerals_upkeep_mult = -2
+		planet_pops_food_upkeep_mult = -2
 		planet_jobs_upkeep_mult = 1
+		pop_resettlement_cost_mult = 0.4
 	}
 	slave_cost = {
 		energy = 5000
@@ -198,20 +302,46 @@ trait_sxx_huashen = {
 		always = yes
 	}
 
-	allowed_archetypes = { BIOLOGICAL LITHOID ROBOT MACHINE }
+	opposites = { "trait_nerve_stapled" "PF_trait_core_species" "PF_trait_core_ignore" }
+	allowed_archetypes = {
+		BIOLOGICAL
+		ROBOT
+		MACHINE
+		LITHOID
+		WARSHIPGIRL	#_wsg
+		SHENHAI
+		UNITED_FLEET
+		NANITES_CROP
+		STARSHIPGIRLS	#swg
+		LILY		#突击莉莉
+		KANMUSU		#kc
+		DATEALIVE	#dal
+		KANSEN		#azl
+		Dolls		#灰烬
+		ELF		#带刺
+		Magical_Bitch
+		Magical_Girl
+		NYTO	#涅托
+		DEITY	#ACOT
+	}
 	custom_tooltip_with_modifiers = sxx_trait_new_pop_auto_remove_tooltip
 	modifier = {
+		sxx_planet_jobs_sxx_base_speed_mod_produces_mult = 31
+		pop_category_sxx_xiuxianzhe_sxx_gongfa_produces_mult = 31
+		planet_pops_sxx_stones_upkeep_mult = 31
+		planet_pops_sxx_pills_upkeep_mult = 31
 		planet_jobs_produces_mult = 4
 		army_damage_mult = 30
         army_health = 30
 		army_morale = 30
-		army_morale_damage_mult = 10
 		army_collateral_damage_mult = 10
 		leader_age = 3000
 		pop_environment_tolerance = 1.6
-		pop_happiness = 0.25
-		planet_pops_organics_food_upkeep_mult = -20
+		planet_pops_energy_upkeep_mult = -4
+		planet_pops_minerals_upkeep_mult = -4
+		planet_pops_food_upkeep_mult = -4
 		planet_jobs_upkeep_mult = 2
+		pop_resettlement_cost_mult = 0.5
 	}
 	slave_cost = {
 		energy = 6000
@@ -242,20 +372,46 @@ trait_sxx_lianxu = {
 		always = yes
 	}
 
-	allowed_archetypes = { BIOLOGICAL LITHOID ROBOT MACHINE }
+	opposites = { "trait_nerve_stapled" "PF_trait_core_species" "PF_trait_core_ignore" }
+	allowed_archetypes = {
+		BIOLOGICAL
+		ROBOT
+		MACHINE
+		LITHOID
+		WARSHIPGIRL	#_wsg
+		SHENHAI
+		UNITED_FLEET
+		NANITES_CROP
+		STARSHIPGIRLS	#swg
+		LILY		#突击莉莉
+		KANMUSU		#kc
+		DATEALIVE	#dal
+		KANSEN		#azl
+		Dolls		#灰烬
+		ELF		#带刺
+		Magical_Bitch
+		Magical_Girl
+		NYTO	#涅托
+		DEITY	#ACOT
+	}
 	custom_tooltip_with_modifiers = sxx_trait_new_pop_auto_remove_tooltip
 	modifier = {
+		sxx_planet_jobs_sxx_base_speed_mod_produces_mult = 63
+		pop_category_sxx_xiuxianzhe_sxx_gongfa_produces_mult = 63
+		planet_pops_sxx_stones_upkeep_mult = 63
+		planet_pops_sxx_pills_upkeep_mult = 63
 		planet_jobs_produces_mult = 8
 		army_damage_mult = 100
         army_health = 100
 		army_morale = 100
-		army_morale_damage_mult = 30
 		army_collateral_damage_mult = 30
 		leader_age = 10000
 		pop_environment_tolerance = 3.2
-		pop_happiness = 0.30
-		planet_pops_organics_food_upkeep_mult = -40
+		planet_pops_energy_upkeep_mult = -8
+		planet_pops_minerals_upkeep_mult = -8
+		planet_pops_food_upkeep_mult = -8
 		planet_jobs_upkeep_mult = 4
+		pop_resettlement_cost_mult = 0.6
 	}
 	slave_cost = {
 		energy = 7000
@@ -286,20 +442,46 @@ trait_sxx_heti = {
 		always = yes
 	}
 
-	allowed_archetypes = { BIOLOGICAL LITHOID ROBOT MACHINE }
+	opposites = { "trait_nerve_stapled" "PF_trait_core_species" "PF_trait_core_ignore" }
+	allowed_archetypes = {
+		BIOLOGICAL
+		ROBOT
+		MACHINE
+		LITHOID
+		WARSHIPGIRL	#_wsg
+		SHENHAI
+		UNITED_FLEET
+		NANITES_CROP
+		STARSHIPGIRLS	#swg
+		LILY		#突击莉莉
+		KANMUSU		#kc
+		DATEALIVE	#dal
+		KANSEN		#azl
+		Dolls		#灰烬
+		ELF		#带刺
+		Magical_Bitch
+		Magical_Girl
+		NYTO	#涅托
+		DEITY	#ACOT
+	}
 	custom_tooltip_with_modifiers = sxx_trait_new_pop_auto_remove_tooltip
 	modifier = {
+		sxx_planet_jobs_sxx_base_speed_mod_produces_mult = 125
+		pop_category_sxx_xiuxianzhe_sxx_gongfa_produces_mult = 125
+		planet_pops_sxx_stones_upkeep_mult = 125
+		planet_pops_sxx_pills_upkeep_mult = 125
 		planet_jobs_produces_mult = 16
 		army_damage_mult = 300
         army_health = 300
 		army_morale = 300
-		army_morale_damage_mult = 100
 		army_collateral_damage_mult = 100
 		leader_age = 30000
 		pop_environment_tolerance = 6.4
-		pop_happiness = 0.35
-		planet_pops_organics_food_upkeep_mult = -80
+		planet_pops_energy_upkeep_mult = -16
+		planet_pops_minerals_upkeep_mult = -16
+		planet_pops_food_upkeep_mult = -16
 		planet_jobs_upkeep_mult = 8
+		pop_resettlement_cost_mult = 0.7
 	}
 	slave_cost = {
 		energy = 8000
@@ -330,20 +512,46 @@ trait_sxx_dacheng = {
 		always = yes
 	}
 
-	allowed_archetypes = { BIOLOGICAL LITHOID ROBOT MACHINE }
+	opposites = { "trait_nerve_stapled" "PF_trait_core_species" "PF_trait_core_ignore" }
+	allowed_archetypes = {
+		BIOLOGICAL
+		ROBOT
+		MACHINE
+		LITHOID
+		WARSHIPGIRL	#_wsg
+		SHENHAI
+		UNITED_FLEET
+		NANITES_CROP
+		STARSHIPGIRLS	#swg
+		LILY		#突击莉莉
+		KANMUSU		#kc
+		DATEALIVE	#dal
+		KANSEN		#azl
+		Dolls		#灰烬
+		ELF		#带刺
+		Magical_Bitch
+		Magical_Girl
+		NYTO	#涅托
+		DEITY	#ACOT
+	}
 	custom_tooltip_with_modifiers = sxx_trait_new_pop_auto_remove_tooltip
 	modifier = {
+		sxx_planet_jobs_sxx_base_speed_mod_produces_mult = 250
+		pop_category_sxx_xiuxianzhe_sxx_gongfa_produces_mult = 250
+		planet_pops_sxx_stones_upkeep_mult = 250
+		planet_pops_sxx_pills_upkeep_mult = 250
 		planet_jobs_produces_mult = 32
 		army_damage_mult = 1000
         army_health = 1000
 		army_morale = 1000
-		army_morale_damage_mult = 300
 		army_collateral_damage_mult = 300
 		leader_age = 100000
 		pop_environment_tolerance = 12.8
-		pop_happiness = 0.40
-		planet_pops_organics_food_upkeep_mult = -160
+		planet_pops_energy_upkeep_mult = -32
+		planet_pops_minerals_upkeep_mult = -32
+		planet_pops_food_upkeep_mult = -32
 		planet_jobs_upkeep_mult = 16
+		pop_resettlement_cost_mult = 0.8
 	}
 	slave_cost = {
 		energy = 9000
@@ -374,23 +582,247 @@ trait_sxx_dujie = {
 		always = yes
 	}
 
-	allowed_archetypes = { BIOLOGICAL LITHOID ROBOT MACHINE }
+	opposites = { "trait_nerve_stapled" "PF_trait_core_species" "PF_trait_core_ignore" }
+	allowed_archetypes = {
+		BIOLOGICAL
+		ROBOT
+		MACHINE
+		LITHOID
+		WARSHIPGIRL	#_wsg
+		SHENHAI
+		UNITED_FLEET
+		NANITES_CROP
+		STARSHIPGIRLS	#swg
+		LILY		#突击莉莉
+		KANMUSU		#kc
+		DATEALIVE	#dal
+		KANSEN		#azl
+		Dolls		#灰烬
+		ELF		#带刺
+		Magical_Bitch
+		Magical_Girl
+		NYTO	#涅托
+		DEITY	#ACOT
+	}
 	custom_tooltip_with_modifiers = sxx_trait_new_pop_auto_remove_tooltip
 	modifier = {
+		sxx_planet_jobs_sxx_base_speed_mod_produces_mult = 500
+		pop_category_sxx_xiuxianzhe_sxx_gongfa_produces_mult = 500
+		planet_pops_sxx_stones_upkeep_mult = 500
+		planet_pops_sxx_pills_upkeep_mult = 500
 		planet_jobs_produces_mult = 64
 		army_damage_mult = 3000
         army_health = 3000
 		army_morale = 3000
-		army_morale_damage_mult = 1000
 		army_collateral_damage_mult = 1000
 		leader_age = 300000
 		pop_environment_tolerance = 25.6
-		pop_happiness = 0.45
-		planet_pops_organics_food_upkeep_mult = -320
+		planet_pops_energy_upkeep_mult = -64
+		planet_pops_minerals_upkeep_mult = -64
+		planet_pops_food_upkeep_mult = -64
 		planet_jobs_upkeep_mult = 32
+		pop_resettlement_cost_mult = 0.9
 	}
 	slave_cost = {
 		energy = 10000
+	}
+}
+
+trait_sxx_zhenxian = {
+	cost = 0
+	potential_crossbreeding_chance = 0
+	sorting_priority = 15
+	initial = no
+	immortal_leaders = yes
+	randomized = no
+	improves_leaders = yes
+
+	species_potential_add = {
+		always = no
+	}
+	species_possible_add = {
+		always = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+
+	opposites = { "trait_nerve_stapled" "PF_trait_core_species" "PF_trait_core_ignore" }
+	allowed_archetypes = {
+		BIOLOGICAL
+		ROBOT
+		MACHINE
+		LITHOID
+		WARSHIPGIRL	#_wsg
+		SHENHAI
+		UNITED_FLEET
+		NANITES_CROP
+		STARSHIPGIRLS	#swg
+		LILY		#突击莉莉
+		KANMUSU		#kc
+		DATEALIVE	#dal
+		KANSEN		#azl
+		Dolls		#灰烬
+		ELF		#带刺
+		Magical_Bitch
+		Magical_Girl
+		NYTO	#涅托
+		DEITY	#ACOT
+	}
+	custom_tooltip_with_modifiers = sxx_trait_new_pop_auto_remove_tooltip
+	modifier = {
+		planet_jobs_produces_mult = 125
+		army_damage_mult = 30000
+        army_health = 30000
+		army_morale = 30000
+		army_collateral_damage_mult = 10000
+		pop_environment_tolerance = 100
+		planet_pops_energy_upkeep_mult = -200
+		planet_pops_minerals_upkeep_mult = -200
+		planet_pops_food_upkeep_mult = -200
+		planet_jobs_upkeep_mult = 12.5
+		pop_resettlement_cost_mult = 1.0
+	}
+	slave_cost = {
+		energy = 15000
+	}
+}
+
+trait_sxx_xianwang = {
+	cost = 0
+	potential_crossbreeding_chance = 0
+	sorting_priority = 15
+	initial = no
+	immortal_leaders = yes
+	randomized = no
+	improves_leaders = yes
+
+	species_potential_add = {
+		always = no
+	}
+	species_possible_add = {
+		always = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+
+	opposites = { "trait_nerve_stapled" "PF_trait_core_species" "PF_trait_core_ignore" }
+	allowed_archetypes = {
+		BIOLOGICAL
+		ROBOT
+		MACHINE
+		LITHOID
+		WARSHIPGIRL	#_wsg
+		SHENHAI
+		UNITED_FLEET
+		NANITES_CROP
+		STARSHIPGIRLS	#swg
+		LILY		#突击莉莉
+		KANMUSU		#kc
+		DATEALIVE	#dal
+		KANSEN		#azl
+		Dolls		#灰烬
+		ELF		#带刺
+		Magical_Bitch
+		Magical_Girl
+		NYTO	#涅托
+		DEITY	#ACOT
+	}
+	custom_tooltip_with_modifiers = sxx_trait_new_pop_auto_remove_tooltip
+	modifier = {
+		planet_jobs_produces_mult = 250
+		army_damage_mult = 100000
+        army_health = 100000
+		army_morale = 100000
+		army_collateral_damage_mult = 30000
+		pop_environment_tolerance = 200
+		planet_pops_energy_upkeep_mult = -400
+		planet_pops_minerals_upkeep_mult = -400
+		planet_pops_food_upkeep_mult = -400
+		planet_jobs_upkeep_mult = 25
+		pop_resettlement_cost_mult = 1.1
+	}
+	slave_cost = {
+		energy = 20000
+	}
+}
+
+trait_sxx_xiandi = {
+	cost = 0
+	potential_crossbreeding_chance = 0
+	sorting_priority = 15
+	initial = no
+	immortal_leaders = yes
+	randomized = no
+	improves_leaders = yes
+
+	species_potential_add = {
+		always = no
+	}
+	species_possible_add = {
+		always = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+
+	opposites = { "trait_nerve_stapled" "PF_trait_core_species" "PF_trait_core_ignore" }
+	allowed_archetypes = {
+		BIOLOGICAL
+		ROBOT
+		MACHINE
+		LITHOID
+		WARSHIPGIRL	#_wsg
+		SHENHAI
+		UNITED_FLEET
+		NANITES_CROP
+		STARSHIPGIRLS	#swg
+		LILY		#突击莉莉
+		KANMUSU		#kc
+		DATEALIVE	#dal
+		KANSEN		#azl
+		Dolls		#灰烬
+		ELF		#带刺
+		Magical_Bitch
+		Magical_Girl
+		NYTO	#涅托
+		DEITY	#ACOT
+	}
+	custom_tooltip_with_modifiers = sxx_trait_new_pop_auto_remove_tooltip
+	modifier = {
+		planet_jobs_produces_mult = 500
+		army_damage_mult = 300000
+        army_health = 300000
+		army_morale = 300000
+		army_collateral_damage_mult = 100000
+		pop_environment_tolerance = 400
+		planet_pops_energy_upkeep_mult = -800
+		planet_pops_minerals_upkeep_mult = -800
+		planet_pops_food_upkeep_mult = -800
+		planet_jobs_upkeep_mult = 50
+		pop_resettlement_cost_mult = 1.2
+	}
+	slave_cost = {
+		energy = 25000
 	}
 }
 
@@ -418,10 +850,35 @@ trait_sxx_yuhua = {
 		always = yes
 	}
 
-	allowed_archetypes = { BIOLOGICAL LITHOID ROBOT MACHINE }
+	opposites = { "trait_nerve_stapled" "PF_trait_core_species" "PF_trait_core_ignore" }
+	allowed_archetypes = {
+		BIOLOGICAL
+		#ROBOT
+		#MACHINE
+		LITHOID
+		WARSHIPGIRL	#_wsg
+		SHENHAI
+		UNITED_FLEET
+		NANITES_CROP
+		STARSHIPGIRLS	#swg
+		LILY		#突击莉莉
+		KANMUSU		#kc
+		DATEALIVE	#dal
+		KANSEN		#azl
+		Dolls		#灰烬
+		ELF		#带刺
+		Magical_Bitch
+		Magical_Girl
+		NYTO	#涅托
+		DEITY	#ACOT
+	}
 	custom_tooltip_with_modifiers = trait_sxx_yuhua_tooltip
 	modifier = {
-		pop_assembly_speed = -100
+		sxx_planet_jobs_sxx_break_die_chance_upkeep_mult = -0.5
+		sxx_planet_jobs_sxx_break_pd_chance_upkeep_mult = -0.5
+		sxx_planet_jobs_sxx_normal_die_chance_upkeep_mult = -0.5
+		sxx_planet_jobs_sxx_normal_pd_chance_upkeep_mult = -0.5
+		planet_pop_assembly_organic_mult = -100
 	}
 	slave_cost = {
 		energy = 5000
@@ -451,13 +908,32 @@ trait_sxx_linggen = {
 		always = yes
 	}
 
-	allowed_archetypes = { BIOLOGICAL LITHOID ROBOT MACHINE }
+#	opposites = { "trait_nerve_stapled" }
+allowed_archetypes = {
+	BIOLOGICAL
+	#ROBOT
+	#MACHINE
+	LITHOID
+	WARSHIPGIRL	#_wsg
+	SHENHAI
+	UNITED_FLEET
+	NANITES_CROP
+	STARSHIPGIRLS	#swg
+	LILY		#突击莉莉
+	KANMUSU		#kc
+	DATEALIVE	#dal
+	KANSEN		#azl
+	Dolls		#灰烬
+	ELF		#带刺
+	Magical_Bitch
+	Magical_Girl
+	NYTO	#涅托
+	DEITY	#ACOT
+}
 	custom_tooltip_with_modifiers = trait_sxx_linggen_tooltip
 	modifier = {
+		sxx_planet_jobs_sxx_speed_mod_produces_mult = 0.2
 		leader_age = -20
-	}
-	slave_cost = {
-		energy = -100
 	}
 }
 
@@ -484,13 +960,383 @@ trait_sxx_potential_depletion = {
 		always = yes
 	}
 
+	allowed_archetypes = {
+		BIOLOGICAL
+		ROBOT
+		MACHINE
+		LITHOID
+		WARSHIPGIRL	#_wsg
+		SHENHAI
+		UNITED_FLEET
+		NANITES_CROP
+		STARSHIPGIRLS	#swg
+		LILY		#突击莉莉
+		KANMUSU		#kc
+		DATEALIVE	#dal
+		KANSEN		#azl
+		Dolls		#灰烬
+		ELF		#带刺
+		Magical_Bitch
+		Magical_Girl
+		NYTO	#涅托
+		DEITY	#ACOT
+	}
+
 	custom_tooltip_with_modifiers = sxx_trait_new_pop_auto_remove_tooltip
+}
+
+trait_sxx_qingxinguayu = {
+	cost = 1
+	initial = yes
+	randomized = yes
+
+	potential_crossbreeding_chance = 1.0
+
+	species_potential_add = {
+		can_add_sxx_cultivatory_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	species_possible_add = {
+		always = yes
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+
+	opposites = { "trait_sxx_yuwangchanshen" }
+
+	allowed_archetypes = {
+		BIOLOGICAL
+		ROBOT
+		MACHINE
+		LITHOID
+		WARSHIPGIRL	#_wsg
+		SHENHAI
+		UNITED_FLEET
+		NANITES_CROP
+		STARSHIPGIRLS	#swg
+		LILY		#突击莉莉
+		KANMUSU		#kc
+		DATEALIVE	#dal
+		KANSEN		#azl
+		Dolls		#灰烬
+		ELF		#带刺
+		Magical_Bitch
+		Magical_Girl
+		NYTO	#涅托
+		DEITY	#ACOT
+	}
 
 	modifier = {
-		pop_happiness = -0.05
+		sxx_planet_jobs_sxx_speed_mod_produces_mult = 0.1
+		planet_pops_consumer_goods_upkeep_mult = -0.1
+		pop_growth_speed = -0.1
 	}
-	slave_cost = {
-		energy = -200
+
+	ai_weight = {
+		weight = 100
+		modifier = {
+			factor = 0
+			from = { is_sxx_sect = no }
+		}
+	}
+}
+
+trait_sxx_yuwangchanshen = {
+	cost = -1
+	initial = yes
+	randomized = yes
+
+	potential_crossbreeding_chance = 1.0
+
+	species_potential_add = {
+		can_do_advanced_gene_modding = yes
+		can_add_sxx_cultivatory_traits = yes
+	}
+	species_possible_add = {
+		always = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+
+	opposites = { "trait_sxx_qingxinguayu" }
+
+	allowed_archetypes = {
+		BIOLOGICAL
+		ROBOT
+		MACHINE
+		LITHOID
+		WARSHIPGIRL	#_wsg
+		SHENHAI
+		UNITED_FLEET
+		NANITES_CROP
+		STARSHIPGIRLS	#swg
+		LILY		#突击莉莉
+		KANMUSU		#kc
+		DATEALIVE	#dal
+		KANSEN		#azl
+		Dolls		#灰烬
+		ELF		#带刺
+		Magical_Bitch
+		Magical_Girl
+		NYTO	#涅托
+		DEITY	#ACOT
+	}
+
+	modifier = {
+		pop_growth_speed = 0.1
+		sxx_planet_jobs_sxx_speed_mod_produces_mult = -0.1
+		planet_pops_consumer_goods_upkeep_mult = 0.1
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+trait_sxx_lingqiqinhe = {
+	cost = 1
+	initial = yes
+	randomized = yes
+
+	potential_crossbreeding_chance = 1.0
+
+	species_potential_add = {
+		can_add_sxx_cultivatory_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	species_possible_add = {
+		always = yes
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+
+	opposites = { "trait_sxx_lingqijueyuan" }
+
+	allowed_archetypes = {
+		BIOLOGICAL
+		ROBOT
+		MACHINE
+		LITHOID
+		WARSHIPGIRL	#_wsg
+		SHENHAI
+		UNITED_FLEET
+		NANITES_CROP
+		STARSHIPGIRLS	#swg
+		LILY		#突击莉莉
+		KANMUSU		#kc
+		DATEALIVE	#dal
+		KANSEN		#azl
+		Dolls		#灰烬
+		ELF		#带刺
+		Magical_Bitch
+		Magical_Girl
+		NYTO	#涅托
+		DEITY	#ACOT
+	}
+
+	modifier = {
+		sxx_planet_jobs_sxx_speed_1_mod_produces_mult = 0.15
+	}
+
+	ai_weight = {
+		weight = 100
+		modifier = {
+			factor = 0
+			from = { is_sxx_sect = no }
+		}
+	}
+}
+
+trait_sxx_lingqijueyuan = {
+	cost = -1
+	initial = yes
+	randomized = yes
+
+	potential_crossbreeding_chance = 1.0
+
+	species_potential_add = {
+		can_do_advanced_gene_modding = yes
+		can_add_sxx_cultivatory_traits = yes
+	}
+	species_possible_add = {
+		always = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+
+	opposites = { "trait_sxx_lingqiqinhe" }
+
+	allowed_archetypes = {
+		BIOLOGICAL
+		ROBOT
+		MACHINE
+		LITHOID
+		WARSHIPGIRL	#_wsg
+		SHENHAI
+		UNITED_FLEET
+		NANITES_CROP
+		STARSHIPGIRLS	#swg
+		LILY		#突击莉莉
+		KANMUSU		#kc
+		DATEALIVE	#dal
+		KANSEN		#azl
+		Dolls		#灰烬
+		ELF		#带刺
+		Magical_Bitch
+		Magical_Girl
+		NYTO	#涅托
+		DEITY	#ACOT
+	}
+
+	modifier = {
+		sxx_planet_jobs_sxx_speed_1_mod_produces_mult = -0.15
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+trait_sxx_wuxinggaochao = {
+	cost = 2
+	initial = yes
+	randomized = yes
+
+	potential_crossbreeding_chance = 1.0
+
+	species_potential_add = {
+		can_add_sxx_cultivatory_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	species_possible_add = {
+		always = yes
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+
+	opposites = { "trait_sxx_wuxingdixia" }
+
+	allowed_archetypes = {
+		BIOLOGICAL
+		ROBOT
+		MACHINE
+		LITHOID
+		WARSHIPGIRL	#_wsg
+		SHENHAI
+		UNITED_FLEET
+		NANITES_CROP
+		STARSHIPGIRLS	#swg
+		LILY		#突击莉莉
+		KANMUSU		#kc
+		DATEALIVE	#dal
+		KANSEN		#azl
+		Dolls		#灰烬
+		ELF		#带刺
+		Magical_Bitch
+		Magical_Girl
+		NYTO	#涅托
+		DEITY	#ACOT
+	}
+
+	modifier = {
+		pop_category_sxx_xiuxianzhe_sxx_gongfa_produces_add = 0.01
+	}
+
+	ai_weight = {
+		weight = 100
+		modifier = {
+			factor = 0
+			from = { is_sxx_sect = no }
+		}
+	}
+}
+
+trait_sxx_wuxingdixia = {
+	cost = -2
+	initial = yes
+	randomized = yes
+
+	potential_crossbreeding_chance = 1.0
+
+	species_potential_add = {
+		can_do_advanced_gene_modding = yes
+		can_add_sxx_cultivatory_traits = yes
+	}
+	species_possible_add = {
+		always = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+
+	opposites = { "trait_sxx_wuxinggaochao" }
+
+	allowed_archetypes = {
+		BIOLOGICAL
+		ROBOT
+		MACHINE
+		LITHOID
+		WARSHIPGIRL	#_wsg
+		SHENHAI
+		UNITED_FLEET
+		NANITES_CROP
+		STARSHIPGIRLS	#swg
+		LILY		#突击莉莉
+		KANMUSU		#kc
+		DATEALIVE	#dal
+		KANSEN		#azl
+		Dolls		#灰烬
+		ELF		#带刺
+		Magical_Bitch
+		Magical_Girl
+		NYTO	#涅托
+		DEITY	#ACOT
+	}
+
+	modifier = {
+		pop_category_sxx_xiuxianzhe_sxx_gongfa_produces_add = -0.01
+	}
+
+	ai_weight = {
+		weight = 0
 	}
 }
 
@@ -518,7 +1364,8 @@ trait_sxx_douluo = {
 		always = yes
 	}
 
-	allowed_archetypes = { BIOLOGICAL LITHOID ROBOT MACHINE }
+	opposites = { "trait_strong" "trait_very_strong" }
+	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
 		planet_jobs_produces_mult = -0.99
 		army_damage_mult = -0.99
@@ -570,7 +1417,8 @@ trait_sxx_douluo_god = {
 		always = yes
 	}
 
-	allowed_archetypes = { BIOLOGICAL LITHOID ROBOT MACHINE }
+	opposites = { "trait_strong" "trait_very_strong" }
+	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
 		planet_jobs_produces_mult = -0.9
 		army_damage_mult = -0.9
@@ -579,7 +1427,7 @@ trait_sxx_douluo_god = {
 		pop_environment_tolerance = -0.9
 		planet_pops_upkeep_mult = -0.99
 		planet_jobs_upkeep_mult = -0.9
-		pop_assembly_speed = -100
+		planet_pop_assembly_organic_mult = -100
 	}
 	triggered_planet_growth_habitability_modifier = {
 		potential = {
@@ -592,5 +1440,64 @@ trait_sxx_douluo_god = {
 	}
 	slave_cost = {
 		energy = -500
+	}
+}
+
+trait_sxx_template = {
+	cost = 0
+	potential_crossbreeding_chance = 0
+	initial = no
+	randomized = no
+
+	species_potential_add = {
+		hidden_trigger = { exists = from }
+		from = {
+			has_technology = tech_sxx_gene_template
+		}
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	species_possible_add = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+
+#	opposites = { "trait_sxx_lianqi" "trait_sxx_zhuji" "trait_sxx_jindan" "trait_sxx_yuanying" "trait_sxx_huashen" "trait_sxx_lianxu" "trait_sxx_heti" "trait_sxx_dacheng" "trait_sxx_dujie" }
+	allowed_archetypes = {
+		BIOLOGICAL
+		ROBOT
+		MACHINE
+		LITHOID
+		WARSHIPGIRL	#_wsg
+		SHENHAI
+		UNITED_FLEET
+		NANITES_CROP
+		STARSHIPGIRLS	#swg
+		LILY		#突击莉莉
+		KANMUSU		#kc
+		DATEALIVE	#dal
+		KANSEN		#azl
+		Dolls		#灰烬
+		ELF		#带刺
+		Magical_Bitch
+		Magical_Girl
+		NYTO	#涅托
+		DEITY	#ACOT
+	}
+	
+	custom_tooltip_with_modifiers = trait_sxx_template_tooltip
+	modifier = {
+	}
+	ai_weight = {
+		weight = 0
+	}
+	slave_cost = {
+		energy = 0
 	}
 }

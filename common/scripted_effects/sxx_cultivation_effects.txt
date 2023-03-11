@@ -1,0 +1,1331 @@
+sxx_pop_break_to_lianqi = {
+	sxx_species_break_to_lianqi = yes
+	set_variable = { which = sxx_pop_xp value = 0 }
+	owner = {
+		if = {
+			limit = {
+				is_lianqi_country = no
+			}
+			set_country_flag = sxx_country_break_to_lianqi
+		}
+		if = {
+			limit = {
+				has_event_chain = sxx_cultivation_data_chain
+			}
+			add_event_chain_counter = {
+				event_chain = sxx_cultivation_data_chain
+				counter = sxx_mortal_broke_count
+				amount = 1
+			}
+		}
+	}
+}
+
+sxx_pop_break_to_zhuji = {
+	sxx_species_break_to_zhuji = yes
+	set_variable = { which = sxx_pop_xp value = 0 }
+	owner = {
+		if = {
+			limit = {
+				is_zhuji_country = no
+			}
+			set_country_flag = sxx_country_break_to_zhuji
+		}
+		if = {
+			limit = {
+				has_event_chain = sxx_cultivation_data_chain
+			}
+			add_event_chain_counter = {
+				event_chain = sxx_cultivation_data_chain
+				counter = sxx_lianqi_broke_count
+				amount = 1
+			}
+		}
+	}
+}
+
+sxx_pop_break_to_jindan = {
+	sxx_species_break_to_jindan = yes
+	set_variable = { which = sxx_pop_xp value = 0 }
+	owner = {
+		if = {
+			limit = {
+				is_jindan_country = no
+			}
+			set_country_flag = sxx_country_break_to_jindan
+		}
+		if = {
+			limit = {
+				has_event_chain = sxx_cultivation_data_chain
+			}
+			add_event_chain_counter = {
+				event_chain = sxx_cultivation_data_chain
+				counter = sxx_zhuji_broke_count
+				amount = 1
+			}
+		}
+	}
+}
+
+sxx_pop_break_to_yuanying = {
+	sxx_species_break_to_yuanying = yes
+	set_variable = { which = sxx_pop_xp value = 0 }
+	owner = {
+		if = {
+			limit = {
+				is_yuanying_country = no
+			}
+			set_country_flag = sxx_country_break_to_yuanying
+		}
+		if = {
+			limit = {
+				has_event_chain = sxx_cultivation_data_chain
+			}
+			add_event_chain_counter = {
+				event_chain = sxx_cultivation_data_chain
+				counter = sxx_jindan_broke_count
+				amount = 1
+			}
+		}
+	}
+}
+
+sxx_pop_break_to_huashen = {
+	sxx_species_break_to_huashen = yes
+	set_variable = { which = sxx_pop_xp value = 0 }
+	owner = {
+		if = {
+			limit = {
+				is_huashen_country = no
+			}
+			set_country_flag = sxx_country_break_to_huashen
+		}
+		if = {
+			limit = {
+				has_event_chain = sxx_cultivation_data_chain
+			}
+			add_event_chain_counter = {
+				event_chain = sxx_cultivation_data_chain
+				counter = sxx_yuanying_broke_count
+				amount = 1
+			}
+		}
+		if = {
+			limit = {
+				has_origin = origin_sxx_yuhua
+				prev = { has_trait = trait_sxx_linggen }
+			}
+			country_event = { id = sxx_origin.6 }
+		}
+	}
+}
+
+sxx_pop_break_to_lianxu = {
+	sxx_species_break_to_lianxu = yes
+	set_variable = { which = sxx_pop_xp value = 0 }
+	owner = {
+		if = {
+			limit = {
+				is_lianxu_country = no
+			}
+			set_country_flag = sxx_country_break_to_lianxu
+		}
+		if = {
+			limit = {
+				has_event_chain = sxx_cultivation_data_chain
+			}
+			add_event_chain_counter = {
+				event_chain = sxx_cultivation_data_chain
+				counter = sxx_huashen_broke_count
+				amount = 1
+			}
+		}
+	}
+}
+
+sxx_pop_break_to_heti = {
+	sxx_species_break_to_heti = yes
+	set_variable = { which = sxx_pop_xp value = 0 }
+	owner = {
+		if = {
+			limit = {
+				is_heti_country = no
+			}
+			set_country_flag = sxx_country_break_to_heti
+		}
+		if = {
+			limit = {
+				has_event_chain = sxx_cultivation_data_chain
+			}
+			add_event_chain_counter = {
+				event_chain = sxx_cultivation_data_chain
+				counter = sxx_lianxu_broke_count
+				amount = 1
+			}
+		}
+	}
+}
+
+sxx_pop_break_to_dacheng = {
+	sxx_species_break_to_dacheng = yes
+	set_variable = { which = sxx_pop_xp value = 0 }
+	owner = {
+		if = {
+			limit = {
+				is_dacheng_country = no
+			}
+			set_country_flag = sxx_country_break_to_dacheng
+		}
+		if = {
+			limit = {
+				has_event_chain = sxx_cultivation_data_chain
+			}
+			add_event_chain_counter = {
+				event_chain = sxx_cultivation_data_chain
+				counter = sxx_heti_broke_count
+				amount = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			owner = { has_origin = origin_sxx_yuhua }
+			has_trait = trait_sxx_linggen
+		}
+		sxx_pop_die_and_become_yuhuaxian_if_possible = yes
+	}
+}
+
+sxx_pop_break_to_dujie = {
+	if = {
+		limit = {
+			NOT = { has_trait = trait_sxx_linggen }
+		}
+		sxx_species_break_to_dujie = yes
+		set_variable = { which = sxx_pop_xp value = 0 }
+		owner = {
+			if = {
+				limit = {
+					is_dujie_country = no
+				}
+				set_country_flag = sxx_country_break_to_dujie
+			}
+			if = {
+				limit = {
+					has_event_chain = sxx_cultivation_data_chain
+				}
+				add_event_chain_counter = {
+					event_chain = sxx_cultivation_data_chain
+					counter = sxx_dacheng_broke_count
+					amount = 1
+				}
+			}
+		}
+	}
+	else = {
+		modify_species = {
+			species = this
+			remove_trait = trait_sxx_dacheng
+			remove_trait = trait_sxx_linggen
+		}
+		sxx_pop_set_potential_depletion = yes
+	}
+}
+
+# 成仙
+sxx_pop_break_to_fairy = {
+	if = {
+		limit = {
+			owner = { has_ascension_perk = ap_sxx_ascend_to_fairyland }
+		}
+		owner = {
+			if = {
+				limit = {
+					is_fairy_country = no
+				}
+				set_country_flag = sxx_country_break_to_fairy
+				change_variable = { which = value_sxx_fairy_1 value = 1 }
+				add_resource = { sxx_qiyun = 10 }
+			#	change_variable = { which = value_sxx_fate_point value = 10 }
+			}
+			else = {
+				add_event_chain_counter = {
+					event_chain = sxx_ascend_chain
+					counter = sxx_fairy_1
+					amount = 1
+				}
+				change_variable = { which = value_sxx_fairy_1 value = 1 }
+				add_resource = { sxx_qiyun = 10 }
+			#	add_event_chain_counter = {
+			#		event_chain = sxx_ascend_chain
+			#		counter = sxx_fate_point
+			#		amount = 10
+			#	}
+			#	change_variable = { which = value_sxx_fate_point value = 10 }
+				country_event = { id = sxx_event.54 }
+			}
+	
+			if = {
+				limit = {
+					has_event_chain = sxx_cultivation_data_chain
+				}
+				add_event_chain_counter = {
+					event_chain = sxx_cultivation_data_chain
+					counter = sxx_dujie_broke_count
+					amount = 1
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			owner = { has_ascension_perk = ap_sxx_build_heaven }
+		}
+		sxx_species_break_to_zhenxian = yes
+		set_variable = { which = sxx_pop_xp value = 0 }
+		sxx_pop_remove_potential_depletion = yes
+		owner = {
+			if = {
+				limit = {
+					is_sxx_heaven_country = no
+				}
+				set_country_flag = sxx_country_break_to_heaven
+			}
+			else = {
+				country_event = { id = sxx_event.41 }
+			}
+			if = {
+				limit = {
+					has_event_chain = sxx_cultivation_data_chain
+				}
+				add_event_chain_counter = {
+					event_chain = sxx_cultivation_data_chain
+					counter = sxx_dujie_broke_count
+					amount = 1
+				}
+			}
+		}
+	}
+}
+
+sxx_fairy_pop_may_break_state = {
+	switch = {
+		trigger = has_trait
+		trait_sxx_zhenxian = {
+			random_list = {
+				20 = {}
+				10 = { sxx_pop_break_to_xianwang = yes }
+			}
+		}
+		trait_sxx_xianwang = {
+			random_list = {
+				90 = {}
+				10 = { sxx_pop_break_to_xiandi = yes }
+			}
+		}
+	}
+}
+
+sxx_pop_break_to_xianwang = {
+	sxx_species_break_to_xianwang = yes
+	set_variable = { which = sxx_fairy_pop_xp value = 0 }
+	owner = {
+		change_variable = { which = num_sxx_xianwang value = 1 }
+		country_event = { id = sxx_event.42 }
+	}
+}
+
+sxx_pop_break_to_xiandi = {
+	sxx_species_break_to_xiandi = yes
+	set_variable = { which = sxx_fairy_pop_xp value = 0 }
+	owner = {
+		change_variable = { which = num_sxx_xiandi value = 1 }
+		country_event = { id = sxx_event.43 }
+	}
+}
+
+sxx_pop_may_break_state_according_to_state = {
+	switch = {
+		trigger = has_trait
+		trait_sxx_lianqi = {
+			random_list = {
+				90 = { sxx_pop_break_to_zhuji = yes }
+				10 = {}
+			}
+		}
+		trait_sxx_zhuji = {
+			random_list = {
+				80 = { sxx_pop_break_to_jindan = yes }
+				20 = {}
+			}
+		}
+		trait_sxx_jindan = {
+			random_list = {
+				70 = { sxx_pop_break_to_yuanying = yes }
+				30 = {}
+			}
+		}
+		trait_sxx_yuanying = {
+			random_list = {
+				60 = { sxx_pop_break_to_huashen = yes }
+				40 = {}
+			}
+		}
+		trait_sxx_huashen = {
+			random_list = {
+				50 = { sxx_pop_break_to_lianxu = yes }
+				50 = {}
+			}
+		}
+		trait_sxx_lianxu = {
+			random_list = {
+				40 = { sxx_pop_break_to_heti = yes }
+				60 = {}
+			}
+		}
+		trait_sxx_heti = {
+			random_list = {
+				30 = { sxx_pop_break_to_dacheng = yes }
+				70 = {}
+			}
+		}
+		trait_sxx_dacheng = {
+			random_list = {
+				20 = { sxx_pop_break_to_dujie = yes }
+				80 = {}
+			}
+		}
+		trait_sxx_dujie = {
+			random_list = {
+				10 = { sxx_pop_break_to_fairy = yes }
+				90 = {}
+			}
+		}
+		default = { sxx_pop_break_to_lianqi = yes }
+	}
+}
+
+sxx_pop_may_break_state = {
+	if = {
+		limit = {
+			has_trait = trait_mechanical
+		}
+		random_list = {
+			50 = {}
+			50 = {
+				if = {
+					limit = {
+						is_sxx_potential_depletion = yes
+					}
+					random_list = {
+						90 = {}
+						10 = { sxx_pop_may_break_state_according_to_state = yes }
+					}
+				}
+				else = {
+					sxx_pop_may_break_state_according_to_state = yes
+				}
+			}
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				is_sxx_potential_depletion = yes
+			}
+			random_list = {
+				90 = {}
+				10 = { sxx_pop_may_break_state_according_to_state = yes }
+			}
+		}
+		else = {
+			sxx_pop_may_break_state_according_to_state = yes
+		}
+	}
+}
+
+sxx_pop_may_pd_from_cultivation = {
+	if = {
+		limit = {
+			is_sxx_t1_body = yes
+		}
+		# nothing
+	}
+	else_if = {
+		limit = {
+			is_sxx_t2_body = yes
+		}
+		random_list = {
+			90 = {}
+			10 = { sxx_pop_may_potential_depletion_by_state = yes }
+		}
+	}
+	else = {
+		sxx_pop_may_potential_depletion_by_state = yes
+	}
+}
+
+sxx_pop_may_potential_depletion_by_state = {
+	switch = {
+		trigger = has_trait
+		trait_sxx_lianqi = {
+			random_list = {
+				10 = { sxx_pop_set_potential_depletion = yes }
+				2550 = {}
+			}
+		}
+		trait_sxx_zhuji = {
+			random_list = {
+				10 = { sxx_pop_set_potential_depletion = yes }
+				1270 = {}
+			}
+		}
+		trait_sxx_jindan = {
+			random_list = {
+				10 = { sxx_pop_set_potential_depletion = yes }
+				630 = {}
+			}
+		}
+		trait_sxx_yuanying = {
+			random_list = {
+				10 = { sxx_pop_set_potential_depletion = yes }
+				310 = {}
+			}
+		}
+		trait_sxx_huashen = {
+			random_list = {
+				10 = { sxx_pop_set_potential_depletion = yes }
+				150 = {}
+			}
+		}
+		trait_sxx_lianxu = {
+			random_list = {
+				10 = { sxx_pop_set_potential_depletion = yes }
+				70 = {}
+			}
+		}
+		trait_sxx_heti = {
+			random_list = {
+				10 = { sxx_pop_set_potential_depletion = yes }
+				30 = {}
+			}
+		}
+		trait_sxx_dacheng = {
+			random_list = {
+				10 = { sxx_pop_set_potential_depletion = yes }
+				10 = {}
+			}
+		}
+		trait_sxx_dujie = { sxx_pop_set_potential_depletion = yes }
+		default = {
+			random_list = {
+				10 = { sxx_pop_set_potential_depletion = yes }
+				5110 = {}
+			}
+		}
+	}
+}
+
+# 概率触发效果，随修正变化
+# 有效范围：-100% ~ CHANCE2%
+sxx_chance_happen_effect = {
+	random_list = {
+		$CHANCE1$ = {
+			$EFFECT$ = yes
+			modifier = {
+				add = value:sxx_chance_add|CHANCE1|$CHANCE1$|CHANCE2|$CHANCE2$|MODIFIER|$MODIFIER$|
+			}
+		}
+		$CHANCE2$ = {
+			modifier = {
+				add = value:sxx_chance_subtract|CHANCE1|$CHANCE1$|CHANCE2|$CHANCE2$|MODIFIER|$MODIFIER$|
+			}
+		}
+	}
+}
+
+sxx_test_add_variable_1_effect = {
+	owner = {
+		change_variable = {
+			which = sxx_test_v
+			value = 1
+		}
+	}
+}
+
+sxx_test_ex = {
+	every_owned_pop = {
+		set_variable = {
+			which = sxx_test_v_add
+			value = value:sxx_chance_add_test|MODIFIER|sxx_break_die_chance_upkeep_mult|
+		}
+		set_variable = {
+			which = sxx_test_v_sub
+			value = value:sxx_chance_subtract_test|MODIFIER|sxx_break_die_chance_upkeep_mult|
+		}
+	}
+}
+
+sxx_test_die = {
+	random_owned_pop = {
+		sxx_chance_happen_effect = { EFFECT = sxx_test_add_variable_1_effect CHANCE1 = 500 CHANCE2 = 500 MODIFIER = sxx_break_die_chance_upkeep_mult }
+	}
+}
+
+sxx_test_die_1 = {
+	sxx_chance_happen_effect = { EFFECT = sxx_test_add_variable_1_effect CHANCE1 = 500 CHANCE2 = 500 MODIFIER = sxx_break_die_chance_upkeep_mult }
+}
+
+sxx_pop_die_from_break_effect = {
+	sxx_pop_add_died_data = yes
+	sxx_pop_die_and_become_yuhuaxian_if_possible = yes
+}
+
+sxx_pop_die_from_break = {
+	if = {
+		limit = {
+			is_sxx_t1_body = yes
+		}
+		# nothing
+	}
+	else_if = {
+		limit = {
+			is_sxx_t2_body = yes
+		}
+		random_list = {
+			90 = {}
+			10 = { sxx_pop_die_from_break_effect = yes }
+		}
+	}
+	else = {
+		sxx_pop_die_from_break_effect = yes
+	}
+}
+
+sxx_pop_may_die_from_break = {
+	switch = {
+		trigger = has_trait
+		trait_sxx_yuanying = {
+			random_list = {
+				10 = { sxx_pop_die_from_break = yes }
+				310 = {}
+			}
+		}
+		trait_sxx_huashen = {
+			random_list = {
+				10 = { sxx_pop_die_from_break = yes }
+				150 = {}
+			}
+		}
+		trait_sxx_lianxu = {
+			random_list = {
+				10 = { sxx_pop_die_from_break = yes }
+				70 = {}
+			}
+		}
+		trait_sxx_heti = {
+			random_list = {
+				10 = { sxx_pop_die_from_break = yes }
+				30 = {}
+			}
+		}
+		trait_sxx_dacheng = {
+			random_list = {
+				10 = { sxx_pop_die_from_break = yes }
+				10 = {}
+			}
+		}
+		trait_sxx_dujie = { sxx_pop_die_from_break = yes }
+		default = {}
+	}
+}
+
+sxx_set_pop_xp_max_if_over_max = {
+	if = {
+		limit = {
+			check_variable = {
+				which = sxx_pop_xp
+				value > value:sxx_pop_xp_max
+			}
+		}
+		set_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_max }
+	}
+}
+
+sxx_set_fairy_pop_xp_max_if_over_max = {
+	if = {
+		limit = {
+			check_variable = {
+				which = sxx_fairy_pop_xp
+				value > value:sxx_fairy_pop_xp_max
+			}
+		}
+		set_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_max }
+	}
+}
+
+sxx_pop_add_died_data = {
+	switch = {
+		trigger = has_trait
+		trait_sxx_lianqi = {
+			owner = {
+				if = {
+					limit = {
+						has_event_chain = sxx_cultivation_data_chain
+					}
+					add_event_chain_counter = {
+						event_chain = sxx_cultivation_data_chain
+						counter = sxx_lianqi_died_count
+						amount = 1
+					}
+				}
+			}
+		}
+		trait_sxx_zhuji = {
+			owner = {
+				if = {
+					limit = {
+						has_event_chain = sxx_cultivation_data_chain
+					}
+					add_event_chain_counter = {
+						event_chain = sxx_cultivation_data_chain
+						counter = sxx_zhuji_died_count
+						amount = 1
+					}
+				}
+			}
+		}
+		trait_sxx_jindan = {
+			owner = {
+				if = {
+					limit = {
+						has_event_chain = sxx_cultivation_data_chain
+					}
+					add_event_chain_counter = {
+						event_chain = sxx_cultivation_data_chain
+						counter = sxx_jindan_died_count
+						amount = 1
+					}
+				}
+			}
+		}
+		trait_sxx_yuanying = {
+			owner = {
+				if = {
+					limit = {
+						has_event_chain = sxx_cultivation_data_chain
+					}
+					add_event_chain_counter = {
+						event_chain = sxx_cultivation_data_chain
+						counter = sxx_yuanying_died_count
+						amount = 1
+					}
+				}
+			}
+		}
+		trait_sxx_huashen = {
+			owner = {
+				if = {
+					limit = {
+						has_event_chain = sxx_cultivation_data_chain
+					}
+					add_event_chain_counter = {
+						event_chain = sxx_cultivation_data_chain
+						counter = sxx_huashen_died_count
+						amount = 1
+					}
+				}
+			}
+		}
+		trait_sxx_lianxu = {
+			owner = {
+				if = {
+					limit = {
+						has_event_chain = sxx_cultivation_data_chain
+					}
+					add_event_chain_counter = {
+						event_chain = sxx_cultivation_data_chain
+						counter = sxx_lianxu_died_count
+						amount = 1
+					}
+				}
+			}
+		}
+		trait_sxx_heti = {
+			owner = {
+				if = {
+					limit = {
+						has_event_chain = sxx_cultivation_data_chain
+					}
+					add_event_chain_counter = {
+						event_chain = sxx_cultivation_data_chain
+						counter = sxx_heti_died_count
+						amount = 1
+					}
+				}
+			}
+		}
+		trait_sxx_dacheng = {
+			owner = {
+				if = {
+					limit = {
+						has_event_chain = sxx_cultivation_data_chain
+					}
+					add_event_chain_counter = {
+						event_chain = sxx_cultivation_data_chain
+						counter = sxx_dacheng_died_count
+						amount = 1
+					}
+				}
+			}
+		}
+		trait_sxx_dujie = {
+			owner = {
+				if = {
+					limit = {
+						has_event_chain = sxx_cultivation_data_chain
+					}
+					add_event_chain_counter = {
+						event_chain = sxx_cultivation_data_chain
+						counter = sxx_dujie_died_count
+						amount = 1
+					}
+				}
+			}
+		}
+		default = {
+			owner = {
+				if = {
+					limit = {
+						has_event_chain = sxx_cultivation_data_chain
+					}
+					add_event_chain_counter = {
+						event_chain = sxx_cultivation_data_chain
+						counter = sxx_mortal_died_count
+						amount = 1
+					}
+				}
+			}
+		}
+	}
+}
+
+sxx_planet_cultivate_effect = {
+	set_update_modifiers_batch = begin
+	switch = {
+		trigger = has_global_flag
+		sxx_break_level_1 = {
+			every_owned_pop = {
+				limit = {
+					has_sxx_xiuxian_living_standard = yes
+					is_sxx_fairy_pop = no
+				}
+				if = {
+					limit = {
+						check_variable = {
+							which = sxx_pop_xp
+							value >= value:sxx_pop_xp_max
+						}
+					}
+					random_list = {
+						5 = {}
+						80 = { sxx_chance_happen_effect = { EFFECT = sxx_pop_may_break_state CHANCE1 = 500 CHANCE2 = 500 MODIFIER = sxx_break_success_chance_produces_mult } }
+					}
+				}
+				else = {
+					random_list = {
+						5000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t1 } sxx_set_pop_xp_max_if_over_max = yes } # 0.1倍经验
+						20000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t2 } sxx_set_pop_xp_max_if_over_max = yes } # 0.5倍经验
+						50000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t3 } sxx_set_pop_xp_max_if_over_max = yes } # 1倍经验
+						20000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t4 } sxx_set_pop_xp_max_if_over_max = yes } # 1.5倍经验
+						4000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t5 } sxx_set_pop_xp_max_if_over_max = yes } # 2倍经验
+						750 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t6 } sxx_set_pop_xp_max_if_over_max = yes } # 5倍经验
+						225 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t7 } sxx_set_pop_xp_max_if_over_max = yes } # 10倍经验
+						20 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t8 } sxx_set_pop_xp_max_if_over_max = yes } # 50倍经验
+						5 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t9 } sxx_set_pop_xp_max_if_over_max = yes } # 100倍经验
+					}
+				}
+			}
+		}
+		sxx_break_level_2 = {
+			every_owned_pop = {
+				limit = {
+					has_sxx_xiuxian_living_standard = yes
+					is_sxx_fairy_pop = no
+				}
+				if = {
+					limit = {
+						check_variable = {
+							which = sxx_pop_xp
+							value >= value:sxx_pop_xp_max
+						}
+					}
+					random_list = {
+						10 = {}
+						60 = { sxx_chance_happen_effect = { EFFECT = sxx_pop_may_break_state CHANCE1 = 500 CHANCE2 = 500 MODIFIER = sxx_break_success_chance_produces_mult } }
+					}
+				}
+				else = {
+					random_list = {
+						5000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t1 } sxx_set_pop_xp_max_if_over_max = yes } # 0.1倍经验
+						20000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t2 } sxx_set_pop_xp_max_if_over_max = yes } # 0.5倍经验
+						50000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t3 } sxx_set_pop_xp_max_if_over_max = yes } # 1倍经验
+						20000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t4 } sxx_set_pop_xp_max_if_over_max = yes } # 1.5倍经验
+						4000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t5 } sxx_set_pop_xp_max_if_over_max = yes } # 2倍经验
+						750 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t6 } sxx_set_pop_xp_max_if_over_max = yes } # 5倍经验
+						225 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t7 } sxx_set_pop_xp_max_if_over_max = yes } # 10倍经验
+						20 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t8 } sxx_set_pop_xp_max_if_over_max = yes } # 50倍经验
+						5 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t9 } sxx_set_pop_xp_max_if_over_max = yes } # 100倍经验
+					}
+				}
+			}
+		}
+		sxx_break_level_3 = {
+			every_owned_pop = {
+				limit = {
+					has_sxx_xiuxian_living_standard = yes
+					is_sxx_fairy_pop = no
+				}
+				if = {
+					limit = {
+						check_variable = {
+							which = sxx_pop_xp
+							value >= value:sxx_pop_xp_max
+						}
+					}
+					random_list = {
+						15 = {}
+						40 = { sxx_chance_happen_effect = { EFFECT = sxx_pop_may_break_state CHANCE1 = 500 CHANCE2 = 500 MODIFIER = sxx_break_success_chance_produces_mult } }
+					}
+				}
+				else = {
+					random_list = {
+						5000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t1 } sxx_set_pop_xp_max_if_over_max = yes } # 0.1倍经验
+						20000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t2 } sxx_set_pop_xp_max_if_over_max = yes } # 0.5倍经验
+						50000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t3 } sxx_set_pop_xp_max_if_over_max = yes } # 1倍经验
+						20000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t4 } sxx_set_pop_xp_max_if_over_max = yes } # 1.5倍经验
+						4000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t5 } sxx_set_pop_xp_max_if_over_max = yes } # 2倍经验
+						750 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t6 } sxx_set_pop_xp_max_if_over_max = yes } # 5倍经验
+						225 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t7 } sxx_set_pop_xp_max_if_over_max = yes } # 10倍经验
+						20 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t8 } sxx_set_pop_xp_max_if_over_max = yes } # 50倍经验
+						5 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t9 } sxx_set_pop_xp_max_if_over_max = yes } # 100倍经验
+					}
+				}
+			}
+		}
+		sxx_break_level_4 = {
+			every_owned_pop = {
+				limit = {
+					has_sxx_xiuxian_living_standard = yes
+					is_sxx_fairy_pop = no
+				}
+				if = {
+					limit = {
+						check_variable = {
+							which = sxx_pop_xp
+							value >= value:sxx_pop_xp_max
+						}
+					}
+					random_list = {
+						20 = {}
+						20 = { sxx_chance_happen_effect = { EFFECT = sxx_pop_may_break_state CHANCE1 = 500 CHANCE2 = 500 MODIFIER = sxx_break_success_chance_produces_mult } }
+					}
+				}
+				else = {
+					random_list = {
+						5000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t1 } sxx_set_pop_xp_max_if_over_max = yes } # 0.1倍经验
+						20000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t2 } sxx_set_pop_xp_max_if_over_max = yes } # 0.5倍经验
+						50000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t3 } sxx_set_pop_xp_max_if_over_max = yes } # 1倍经验
+						20000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t4 } sxx_set_pop_xp_max_if_over_max = yes } # 1.5倍经验
+						4000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t5 } sxx_set_pop_xp_max_if_over_max = yes } # 2倍经验
+						750 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t6 } sxx_set_pop_xp_max_if_over_max = yes } # 5倍经验
+						225 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t7 } sxx_set_pop_xp_max_if_over_max = yes } # 10倍经验
+						20 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t8 } sxx_set_pop_xp_max_if_over_max = yes } # 50倍经验
+						5 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t9 } sxx_set_pop_xp_max_if_over_max = yes } # 100倍经验
+					}
+				}
+			}
+		}
+		default = {
+			every_owned_pop = {
+				limit = {
+					has_sxx_xiuxian_living_standard = yes
+					is_sxx_fairy_pop = no
+				}
+				if = {
+					limit = {
+						check_variable = {
+							which = sxx_pop_xp
+							value >= value:sxx_pop_xp_max
+						}
+					}
+					random_list = {
+						10 = {}
+						60 = { sxx_chance_happen_effect = { EFFECT = sxx_pop_may_break_state CHANCE1 = 500 CHANCE2 = 500 MODIFIER = sxx_break_success_chance_produces_mult } }
+					}
+				}
+				else = {
+					random_list = {
+						5000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t1 } sxx_set_pop_xp_max_if_over_max = yes } # 0.1倍经验
+						20000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t2 } sxx_set_pop_xp_max_if_over_max = yes } # 0.5倍经验
+						50000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t3 } sxx_set_pop_xp_max_if_over_max = yes } # 1倍经验
+						20000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t4 } sxx_set_pop_xp_max_if_over_max = yes } # 1.5倍经验
+						4000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t5 } sxx_set_pop_xp_max_if_over_max = yes } # 2倍经验
+						750 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t6 } sxx_set_pop_xp_max_if_over_max = yes } # 5倍经验
+						225 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t7 } sxx_set_pop_xp_max_if_over_max = yes } # 10倍经验
+						20 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t8 } sxx_set_pop_xp_max_if_over_max = yes } # 50倍经验
+						5 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t9 } sxx_set_pop_xp_max_if_over_max = yes } # 100倍经验
+					}
+				}
+			}
+		}
+	}
+	set_update_modifiers_batch = end
+}
+
+sxx_planet_cultivate_except_dujie_effect = {
+	set_update_modifiers_batch = begin
+	switch = {
+		trigger = has_global_flag
+		sxx_break_level_1 = {
+			every_owned_pop = {
+				limit = {
+					has_sxx_xiuxian_living_standard = yes
+					NOT = { has_trait = trait_sxx_dujie }
+					is_sxx_fairy_pop = no
+				}
+				if = {
+					limit = {
+						check_variable = {
+							which = sxx_pop_xp
+							value >= value:sxx_pop_xp_max
+						}
+					}
+					random_list = {
+						5 = {}
+						80 = { sxx_chance_happen_effect = { EFFECT = sxx_pop_may_break_state CHANCE1 = 500 CHANCE2 = 500 MODIFIER = sxx_break_success_chance_produces_mult } }
+					}
+				}
+				else = {
+					random_list = {
+						5000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t1 } sxx_set_pop_xp_max_if_over_max = yes } # 0.1倍经验
+						20000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t2 } sxx_set_pop_xp_max_if_over_max = yes } # 0.5倍经验
+						50000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t3 } sxx_set_pop_xp_max_if_over_max = yes } # 1倍经验
+						20000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t4 } sxx_set_pop_xp_max_if_over_max = yes } # 1.5倍经验
+						4000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t5 } sxx_set_pop_xp_max_if_over_max = yes } # 2倍经验
+						750 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t6 } sxx_set_pop_xp_max_if_over_max = yes } # 5倍经验
+						225 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t7 } sxx_set_pop_xp_max_if_over_max = yes } # 10倍经验
+						20 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t8 } sxx_set_pop_xp_max_if_over_max = yes } # 50倍经验
+						5 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t9 } sxx_set_pop_xp_max_if_over_max = yes } # 100倍经验
+					}
+				}
+			}
+		}
+		sxx_break_level_2 = {
+			every_owned_pop = {
+				limit = {
+					has_sxx_xiuxian_living_standard = yes
+					NOT = { has_trait = trait_sxx_dujie }
+				}
+				if = {
+					limit = {
+						check_variable = {
+							which = sxx_pop_xp
+							value >= value:sxx_pop_xp_max
+						}
+					}
+					random_list = {
+						10 = {}
+						60 = { sxx_chance_happen_effect = { EFFECT = sxx_pop_may_break_state CHANCE1 = 500 CHANCE2 = 500 MODIFIER = sxx_break_success_chance_produces_mult } }
+					}
+				}
+				else = {
+					random_list = {
+						5000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t1 } sxx_set_pop_xp_max_if_over_max = yes } # 0.1倍经验
+						20000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t2 } sxx_set_pop_xp_max_if_over_max = yes } # 0.5倍经验
+						50000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t3 } sxx_set_pop_xp_max_if_over_max = yes } # 1倍经验
+						20000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t4 } sxx_set_pop_xp_max_if_over_max = yes } # 1.5倍经验
+						4000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t5 } sxx_set_pop_xp_max_if_over_max = yes } # 2倍经验
+						750 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t6 } sxx_set_pop_xp_max_if_over_max = yes } # 5倍经验
+						225 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t7 } sxx_set_pop_xp_max_if_over_max = yes } # 10倍经验
+						20 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t8 } sxx_set_pop_xp_max_if_over_max = yes } # 50倍经验
+						5 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t9 } sxx_set_pop_xp_max_if_over_max = yes } # 100倍经验
+					}
+				}
+			}
+		}
+		sxx_break_level_3 = {
+			every_owned_pop = {
+				limit = {
+					has_sxx_xiuxian_living_standard = yes
+					NOT = { has_trait = trait_sxx_dujie }
+				}
+				if = {
+					limit = {
+						check_variable = {
+							which = sxx_pop_xp
+							value >= value:sxx_pop_xp_max
+						}
+					}
+					random_list = {
+						15 = {}
+						40 = { sxx_chance_happen_effect = { EFFECT = sxx_pop_may_break_state CHANCE1 = 500 CHANCE2 = 500 MODIFIER = sxx_break_success_chance_produces_mult } }
+					}
+				}
+				else = {
+					random_list = {
+						5000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t1 } sxx_set_pop_xp_max_if_over_max = yes } # 0.1倍经验
+						20000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t2 } sxx_set_pop_xp_max_if_over_max = yes } # 0.5倍经验
+						50000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t3 } sxx_set_pop_xp_max_if_over_max = yes } # 1倍经验
+						20000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t4 } sxx_set_pop_xp_max_if_over_max = yes } # 1.5倍经验
+						4000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t5 } sxx_set_pop_xp_max_if_over_max = yes } # 2倍经验
+						750 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t6 } sxx_set_pop_xp_max_if_over_max = yes } # 5倍经验
+						225 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t7 } sxx_set_pop_xp_max_if_over_max = yes } # 10倍经验
+						20 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t8 } sxx_set_pop_xp_max_if_over_max = yes } # 50倍经验
+						5 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t9 } sxx_set_pop_xp_max_if_over_max = yes } # 100倍经验
+					}
+				}
+			}
+		}
+		sxx_break_level_4 = {
+			every_owned_pop = {
+				limit = {
+					has_sxx_xiuxian_living_standard = yes
+					NOT = { has_trait = trait_sxx_dujie }
+				}
+				if = {
+					limit = {
+						check_variable = {
+							which = sxx_pop_xp
+							value >= value:sxx_pop_xp_max
+						}
+					}
+					random_list = {
+						20 = {}
+						20 = { sxx_chance_happen_effect = { EFFECT = sxx_pop_may_break_state CHANCE1 = 500 CHANCE2 = 500 MODIFIER = sxx_break_success_chance_produces_mult } }
+					}
+				}
+				else = {
+					random_list = {
+						5000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t1 } sxx_set_pop_xp_max_if_over_max = yes } # 0.1倍经验
+						20000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t2 } sxx_set_pop_xp_max_if_over_max = yes } # 0.5倍经验
+						50000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t3 } sxx_set_pop_xp_max_if_over_max = yes } # 1倍经验
+						20000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t4 } sxx_set_pop_xp_max_if_over_max = yes } # 1.5倍经验
+						4000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t5 } sxx_set_pop_xp_max_if_over_max = yes } # 2倍经验
+						750 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t6 } sxx_set_pop_xp_max_if_over_max = yes } # 5倍经验
+						225 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t7 } sxx_set_pop_xp_max_if_over_max = yes } # 10倍经验
+						20 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t8 } sxx_set_pop_xp_max_if_over_max = yes } # 50倍经验
+						5 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t9 } sxx_set_pop_xp_max_if_over_max = yes } # 100倍经验
+					}
+				}
+			}
+		}
+		default = {
+			every_owned_pop = {
+				limit = {
+					has_sxx_xiuxian_living_standard = yes
+					NOT = { has_trait = trait_sxx_dujie }
+				}
+				if = {
+					limit = {
+						check_variable = {
+							which = sxx_pop_xp
+							value >= value:sxx_pop_xp_max
+						}
+					}
+					random_list = {
+						10 = {}
+						60 = { sxx_chance_happen_effect = { EFFECT = sxx_pop_may_break_state CHANCE1 = 500 CHANCE2 = 500 MODIFIER = sxx_break_success_chance_produces_mult } }
+					}
+				}
+				else = {
+					random_list = {
+						5000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t1 } sxx_set_pop_xp_max_if_over_max = yes } # 0.1倍经验
+						20000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t2 } sxx_set_pop_xp_max_if_over_max = yes } # 0.5倍经验
+						50000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t3 } sxx_set_pop_xp_max_if_over_max = yes } # 1倍经验
+						20000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t4 } sxx_set_pop_xp_max_if_over_max = yes } # 1.5倍经验
+						4000 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t5 } sxx_set_pop_xp_max_if_over_max = yes } # 2倍经验
+						750 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t6 } sxx_set_pop_xp_max_if_over_max = yes } # 5倍经验
+						225 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t7 } sxx_set_pop_xp_max_if_over_max = yes } # 10倍经验
+						20 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t8 } sxx_set_pop_xp_max_if_over_max = yes } # 50倍经验
+						5 = { change_variable = { which = sxx_pop_xp value = value:sxx_pop_xp_get_t9 } sxx_set_pop_xp_max_if_over_max = yes } # 100倍经验
+					}
+				}
+			}
+		}
+	}
+	set_update_modifiers_batch = end
+}
+
+sxx_planet_fairy_cultivate_effect = {
+	set_update_modifiers_batch = begin
+	switch = {
+		trigger = has_global_flag
+		sxx_break_level_1 = {
+			every_owned_pop = {
+				limit = {
+					is_sxx_fairy_pop = yes
+					has_sxx_xiuxian_living_standard = yes
+				}
+				if = {
+					limit = {
+						check_variable = {
+							which = sxx_fairy_pop_xp
+							value >= value:sxx_fairy_pop_xp_max
+						}
+					}
+					random_list = {
+						60 = {}
+						40 = { sxx_fairy_pop_may_break_state = yes }
+					}
+				}
+				else = {
+					random_list = {
+						5000 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t1 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 0.1倍经验
+						20000 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t2 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 0.5倍经验
+						50000 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t3 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 1倍经验
+						20000 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t4 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 1.5倍经验
+						4000 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t5 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 2倍经验
+						750 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t6 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 5倍经验
+						225 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t7 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 10倍经验
+						20 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t8 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 50倍经验
+						5 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t9 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 100倍经验
+					}
+				}
+			}
+		}
+		sxx_break_level_2 = {
+			every_owned_pop = {
+				limit = {
+					is_sxx_fairy_pop = yes
+					has_sxx_xiuxian_living_standard = yes
+				}
+				if = {
+					limit = {
+						check_variable = {
+							which = sxx_fairy_pop_xp
+							value >= value:sxx_fairy_pop_xp_max
+						}
+					}
+					random_list = {
+						70 = {}
+						30 = { sxx_fairy_pop_may_break_state = yes }
+					}
+				}
+				else = {
+					random_list = {
+						5000 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t1 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 0.1倍经验
+						20000 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t2 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 0.5倍经验
+						50000 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t3 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 1倍经验
+						20000 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t4 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 1.5倍经验
+						4000 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t5 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 2倍经验
+						750 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t6 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 5倍经验
+						225 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t7 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 10倍经验
+						20 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t8 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 50倍经验
+						5 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t9 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 100倍经验
+					}
+				}
+			}
+		}
+		sxx_break_level_3 = {
+			every_owned_pop = {
+				limit = {
+					is_sxx_fairy_pop = yes
+					has_sxx_xiuxian_living_standard = yes
+				}
+				if = {
+					limit = {
+						check_variable = {
+							which = sxx_fairy_pop_xp
+							value >= value:sxx_fairy_pop_xp_max
+						}
+					}
+					random_list = {
+						80 = {}
+						20 = { sxx_fairy_pop_may_break_state = yes }
+					}
+				}
+				else = {
+					random_list = {
+						5000 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t1 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 0.1倍经验
+						20000 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t2 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 0.5倍经验
+						50000 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t3 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 1倍经验
+						20000 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t4 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 1.5倍经验
+						4000 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t5 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 2倍经验
+						750 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t6 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 5倍经验
+						225 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t7 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 10倍经验
+						20 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t8 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 50倍经验
+						5 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t9 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 100倍经验
+					}
+				}
+			}
+		}
+		sxx_break_level_4 = {
+			every_owned_pop = {
+				limit = {
+					is_sxx_fairy_pop = yes
+					has_sxx_xiuxian_living_standard = yes
+				}
+				if = {
+					limit = {
+						check_variable = {
+							which = sxx_fairy_pop_xp
+							value >= value:sxx_fairy_pop_xp_max
+						}
+					}
+					random_list = {
+						90 = {}
+						10 = { sxx_fairy_pop_may_break_state = yes }
+					}
+				}
+				else = {
+					random_list = {
+						5000 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t1 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 0.1倍经验
+						20000 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t2 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 0.5倍经验
+						50000 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t3 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 1倍经验
+						20000 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t4 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 1.5倍经验
+						4000 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t5 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 2倍经验
+						750 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t6 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 5倍经验
+						225 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t7 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 10倍经验
+						20 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t8 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 50倍经验
+						5 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t9 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 100倍经验
+					}
+				}
+			}
+		}
+		default = {
+			every_owned_pop = {
+				limit = {
+					is_sxx_fairy_pop = yes
+					has_sxx_xiuxian_living_standard = yes
+				}
+				if = {
+					limit = {
+						check_variable = {
+							which = sxx_fairy_pop_xp
+							value >= value:sxx_fairy_pop_xp_max
+						}
+					}
+					random_list = {
+						70 = {}
+						30 = { sxx_fairy_pop_may_break_state = yes }
+					}
+				}
+				else = {
+					random_list = {
+						5000 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t1 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 0.1倍经验
+						20000 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t2 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 0.5倍经验
+						50000 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t3 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 1倍经验
+						20000 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t4 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 1.5倍经验
+						4000 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t5 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 2倍经验
+						750 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t6 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 5倍经验
+						225 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t7 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 10倍经验
+						20 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t8 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 50倍经验
+						5 = { change_variable = { which = sxx_fairy_pop_xp value = value:sxx_fairy_pop_xp_get_t9 } sxx_set_fairy_pop_xp_max_if_over_max = yes } # 100倍经验
+					}
+				}
+			}
+		}
+	}
+	set_update_modifiers_batch = end
+}

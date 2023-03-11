@@ -1,0 +1,27 @@
+auth_sxx_sect = {
+	has_heir = yes
+	has_agendas = yes
+	can_reform = yes
+	possible = {
+		civics = {
+			NOT = {
+				value = civic_sxx_sect
+			}
+		}
+	}
+
+	country_modifier = {
+		pop_demotion_time_mult = -0.5
+		planet_resettlement_unemployed_mult = 1
+	}
+
+	random_weight = {
+		modifier = {
+			factor = 0.5
+		}
+	}
+
+	tags = {
+		AUTHORITY_SXX_SECT
+	}
+}
