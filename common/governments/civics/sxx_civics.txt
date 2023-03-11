@@ -1,5 +1,5 @@
 civic_sxx_evil_way = {
-	modification = no
+	modification = yes
 	possible = {
 		OR = {
 			authority = { value = auth_sxx_sect }
@@ -71,7 +71,7 @@ civic_sxx_hehuan = {
 }
 
 civic_sxx_sect = {
-	modification = no
+	modification = yes
 	possible = {
 		authority = { NOT = { value = auth_sxx_sect } }
 	}
@@ -88,7 +88,7 @@ civic_sxx_sect = {
 }
 
 civic_sxx_fe = {
-	modification = no
+	modification = yes
 
 	icon = "gfx/interface/icons/governments/civics/civic_empire_in_decline.dds"
 
@@ -106,7 +106,7 @@ civic_sxx_fe = {
 }
 
 civic_sxx_afe = {
-	modification = no
+	modification = yes
 
 	icon = "gfx/interface/icons/governments/civics/civic_ancient_caches_of_technology.dds"
 
