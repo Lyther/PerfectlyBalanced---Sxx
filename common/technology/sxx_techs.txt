@@ -1,0 +1,1375 @@
+tech_sxx_lingshi_weapon_1 = {
+	icon = tech_sxx_lingshi_weapon
+	cost = @tier1cost1
+	area = physics
+	tier = 1
+	category = { particles }
+	ai_update_type = all
+	is_reverse_engineerable = no
+	prerequisites = { "tech_starbase_2" }
+	weight = @tier1weight1
+
+	potential = {
+		is_lianqi_country = yes
+	}
+
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		ship = {
+			title = "TECH_UNLOCK_SXX_LINGSHI_WEAPON_1_TITLE"
+			desc = "TECH_UNLOCK_SXX_LINGSHI_WEAPON_1_DESC"
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 50
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+tech_sxx_lingshi_weapon_2 = {
+	icon = tech_sxx_lingshi_weapon
+	cost = @tier1cost3
+	area = physics
+	tier = 1
+	category = { particles }
+	ai_update_type = all
+	is_reverse_engineerable = no
+	prerequisites = { "tech_sxx_lingshi_weapon_1" }
+	weight = @tier1weight3
+
+	potential = {
+		is_zhuji_country = yes
+	}
+
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		ship = {
+			title = "TECH_UNLOCK_SXX_LINGSHI_WEAPON_2_TITLE"
+			desc = "TECH_UNLOCK_SXX_LINGSHI_WEAPON_2_DESC"
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 50
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+tech_sxx_lingshi_weapon_3 = {
+	icon = tech_sxx_lingshi_weapon
+	cost = @tier2cost1
+	area = physics
+	tier = 2
+	category = { particles }
+	ai_update_type = all
+	is_reverse_engineerable = no
+	prerequisites = { "tech_sxx_lingshi_weapon_2" }
+	weight = @tier2weight1
+
+	potential = {
+		is_jindan_country = yes
+	}
+
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		ship = {
+			title = "TECH_UNLOCK_SXX_LINGSHI_WEAPON_3_TITLE"
+			desc = "TECH_UNLOCK_SXX_LINGSHI_WEAPON_3_DESC"
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 50
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+tech_sxx_lingshi_weapon_4 = {
+	icon = tech_sxx_lingshi_weapon
+	cost = @tier2cost3
+	area = physics
+	tier = 2
+	category = { particles }
+	ai_update_type = all
+	is_reverse_engineerable = no
+	prerequisites = { "tech_sxx_lingshi_weapon_3" }
+	weight = @tier2weight3
+
+	potential = {
+		is_yuanying_country = yes
+	}
+
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		ship = {
+			title = "TECH_UNLOCK_SXX_LINGSHI_WEAPON_4_TITLE"
+			desc = "TECH_UNLOCK_SXX_LINGSHI_WEAPON_4_DESC"
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 50
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+tech_sxx_lingshi_weapon_5 = {
+	icon = tech_sxx_lingshi_weapon
+	cost = @tier3cost1
+	area = physics
+	tier = 3
+	category = { particles }
+	ai_update_type = all
+	is_reverse_engineerable = no
+	prerequisites = { "tech_sxx_lingshi_weapon_4" }
+	weight = @tier3weight1
+
+	potential = {
+		is_huashen_country = yes
+	}
+
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		ship = {
+			title = "TECH_UNLOCK_SXX_LINGSHI_WEAPON_5_TITLE"
+			desc = "TECH_UNLOCK_SXX_LINGSHI_WEAPON_5_DESC"
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 50
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+tech_sxx_lingshi_weapon_6 = {
+	icon = tech_sxx_lingshi_weapon
+	cost = @tier3cost3
+	area = physics
+	tier = 3
+	category = { particles }
+	ai_update_type = all
+	is_reverse_engineerable = no
+	prerequisites = { "tech_sxx_lingshi_weapon_5" }
+	weight = @tier3weight3
+
+	potential = {
+		is_lianxu_country = yes
+	}
+
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		ship = {
+			title = "TECH_UNLOCK_SXX_LINGSHI_WEAPON_6_TITLE"
+			desc = "TECH_UNLOCK_SXX_LINGSHI_WEAPON_6_DESC"
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 50
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+tech_sxx_lingshi_weapon_7 = {
+	icon = tech_sxx_lingshi_weapon
+	cost = @tier4cost1
+	area = physics
+	tier = 4
+	category = { particles }
+	ai_update_type = all
+	is_reverse_engineerable = no
+	prerequisites = { "tech_sxx_lingshi_weapon_6" }
+	weight = @tier4weight1
+
+	potential = {
+		is_heti_country = yes
+	}
+
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		ship = {
+			title = "TECH_UNLOCK_SXX_LINGSHI_WEAPON_7_TITLE"
+			desc = "TECH_UNLOCK_SXX_LINGSHI_WEAPON_7_DESC"
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 50
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+tech_sxx_lingshi_weapon_8 = {
+	icon = tech_sxx_lingshi_weapon
+	cost = @tier4cost3
+	area = physics
+	tier = 4
+	category = { particles }
+	ai_update_type = all
+	is_reverse_engineerable = no
+	prerequisites = { "tech_sxx_lingshi_weapon_7" }
+	weight = @tier4weight3
+
+	potential = {
+		is_dacheng_country = yes
+	}
+
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		ship = {
+			title = "TECH_UNLOCK_SXX_LINGSHI_WEAPON_8_TITLE"
+			desc = "TECH_UNLOCK_SXX_LINGSHI_WEAPON_8_DESC"
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 50
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+tech_sxx_lingshi_weapon_9 = {
+	icon = tech_sxx_lingshi_weapon
+	cost = @tier5cost1
+	area = physics
+	tier = 5
+	category = { particles }
+	ai_update_type = all
+	is_reverse_engineerable = no
+	prerequisites = { "tech_sxx_lingshi_weapon_8" }
+	weight = @tier5weight1
+
+	potential = {
+		is_dujie_country = yes
+	}
+
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		ship = {
+			title = "TECH_UNLOCK_SXX_LINGSHI_WEAPON_9_TITLE"
+			desc = "TECH_UNLOCK_SXX_LINGSHI_WEAPON_9_DESC"
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 50
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+tech_repeatable_weapon_type_sxx_lingshi_damage = {
+	cost = 50000
+	cost_per_level = 5000
+	area = physics
+	tier = @repeatableTechTier
+	category = { particles }
+	ai_update_type = all
+	levels = -1
+	prerequisites = { "tech_sxx_lingshi_weapon_9" }
+	weight = @repeatableTechWeight
+
+	weight_modifier = {
+		factor = 0.5
+	}
+
+	potential = {
+        AND = {
+            is_dujie_country = yes
+            OR = {
+                has_policy_flag = pbsxx_repeatable_tech_all_enable
+                has_policy_flag = pbsxx_repeatable_tech_lingshi_damage_only
+            }
+            has_policy_flag = pbsxx_repeatable_tech_mul_1
+        }
+	}
+
+	ai_weight = {
+		factor = 1.5
+	}
+
+	weight_groups = {
+		repeatable
+	}
+
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+
+	modifier = {
+		weapon_type_sxx_lingshi_weapon_damage_mult = 0.05
+	}
+}
+
+tech_repeatable_weapon_type_sxx_lingshi_fire_rate = {
+	cost = 50000
+	cost_per_level = 5000
+	area = physics
+	tier = @repeatableTechTier
+	category = { particles }
+	ai_update_type = all
+	levels = -1
+	prerequisites = { "tech_sxx_lingshi_weapon_9" }
+	weight = @repeatableTechWeight
+
+	weight_modifier = {
+		factor = 0.5
+	}
+
+	potential = {
+        AND = {
+            is_dujie_country = yes
+            OR = {
+                has_policy_flag = pbsxx_repeatable_tech_all_enable
+                has_policy_flag = pbsxx_repeatable_tech_lingshi_fire_rate_only
+            }
+            has_policy_flag = pbsxx_repeatable_tech_mul_1
+        }
+	}
+
+	ai_weight = {
+		factor = 1.5
+	}
+
+	weight_groups = {
+		repeatable
+	}
+
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+
+	modifier = {
+		weapon_type_sxx_lingshi_weapon_fire_rate_mult = 0.05
+	}
+}
+
+tech_sxx_liandanfang_1 = {
+	cost = @tier1cost3
+	area = engineering
+	tier = 1
+	category = { industry }
+	weight = @tier1weight3
+
+	potential = {
+		is_lianqi_country = yes
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_industry
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 75
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_industry
+			}
+		}
+	}
+}
+
+tech_sxx_liandanfang_2 = {
+	cost = @tier2cost3
+	area = engineering
+	tier = 2
+	category = { industry }
+	prerequisites = { "tech_sxx_liandanfang_1" }
+	weight = @tier2weight3
+
+	potential = {
+		is_yuanying_country = yes
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_industry
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 75
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_industry
+			}
+		}
+	}
+}
+
+tech_sxx_liandanfang_3 = {
+	cost = @tier3cost3
+	area = engineering
+	tier = 3
+	category = { industry }
+	prerequisites = { "tech_sxx_liandanfang_2" }
+	weight = @tier3weight3
+
+	potential = {
+		is_heti_country = yes
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_industry
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 75
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_industry
+			}
+		}
+	}
+}
+
+tech_sxx_liandanfang_4 = {
+	cost = @tier5cost3
+	area = engineering
+	tier = 5
+	category = { industry }
+	prerequisites = { "tech_sxx_liandanfang_3" }
+	weight = @tier5weight3
+
+	potential = {
+		is_sxx_final_country = yes
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_industry
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 75
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_industry
+			}
+		}
+	}
+}
+
+tech_sxx_stones_plant_1 = {
+	cost = @tier1cost2
+	area = engineering
+	tier = 1
+	category = { industry }
+	weight = @tier1weight2
+
+	potential = {
+		is_lianqi_country = yes
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_industry
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 75
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_industry
+			}
+		}
+	}
+}
+
+tech_sxx_stones_plant_2 = {
+	cost = @tier3cost2
+	area = engineering
+	tier = 3
+	category = { industry }
+	prerequisites = { "tech_sxx_stones_plant_1" }
+	weight = @tier3weight2
+
+	potential = {
+		is_huashen_country = yes
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_industry
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 75
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_industry
+			}
+		}
+	}
+}
+
+tech_sxx_stones_making_1 = {
+	cost = @tier1cost3
+	area = engineering
+	tier = 1
+	category = { industry }
+	prerequisites = { "tech_sxx_stones_plant_1" }
+	weight = @tier1weight3
+
+	potential = {
+		is_sxx_sect = yes
+	}
+
+	modifier = {
+		planet_sxx_stones_makers_sxx_stones_produces_add = 1
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_industry
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 50
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_industry
+			}
+		}
+	}
+}
+
+tech_sxx_stones_making_2 = {
+	cost = @tier2cost3
+	area = engineering
+	tier = 2
+	category = { industry }
+	prerequisites = { "tech_sxx_stones_making_1" }
+	weight = @tier2weight3
+
+	potential = {
+		is_sxx_sect = yes
+	}
+
+	modifier = {
+		planet_sxx_stones_makers_sxx_stones_produces_add = 1
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_industry
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 50
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_industry
+			}
+		}
+	}
+}
+
+tech_sxx_stones_making_3 = {
+	cost = @tier3cost3
+	area = engineering
+	tier = 3
+	category = { industry }
+	prerequisites = { "tech_sxx_stones_making_2" }
+	weight = @tier3weight3
+
+	potential = {
+		is_sxx_sect = yes
+	}
+
+	modifier = {
+		planet_sxx_stones_makers_sxx_stones_produces_add = 1
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_industry
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 50
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_industry
+			}
+		}
+	}
+}
+
+tech_sxx_stones_making_4 = {
+	cost = @tier4cost3
+	area = engineering
+	tier = 4
+	category = { industry }
+	prerequisites = { "tech_sxx_stones_making_3" }
+	weight = @tier4weight3
+
+	potential = {
+		is_sxx_sect = yes
+	}
+
+	modifier = {
+		planet_sxx_stones_makers_sxx_stones_produces_add = 1
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_industry
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 50
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_industry
+			}
+		}
+	}
+}
+
+tech_sxx_stones_making_5 = {
+	cost = @tier5cost3
+	area = engineering
+	tier = 5
+	category = { industry }
+	prerequisites = { "tech_sxx_stones_making_4" }
+	weight = @tier5weight3
+
+	potential = {
+		is_sxx_sect = yes
+	}
+
+	modifier = {
+		planet_sxx_stones_makers_sxx_stones_produces_add = 1
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_industry
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 50
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_industry
+			}
+		}
+	}
+}
+
+tech_sxx_pills_making_1 = {
+	cost = @tier1cost3
+	area = physics
+	tier = 1
+	category = { field_manipulation }
+	prerequisites = { "tech_sxx_liandanfang_1" }
+	weight = @tier1weight3
+
+	potential = {
+		is_sxx_sect = yes
+	}
+
+	modifier = {
+		planet_sxx_pills_makers_sxx_pills_produces_add = 0.1
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = physics
+				has_trait = leader_trait_expertise_field_manipulation
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 50
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = leader_trait_expertise_field_manipulation
+			}
+		}
+	}
+}
+
+tech_sxx_pills_making_2 = {
+	cost = @tier2cost3
+	area = physics
+	tier = 2
+	category = { field_manipulation }
+	prerequisites = { "tech_sxx_pills_making_1" }
+	weight = @tier2weight3
+
+	potential = {
+		is_sxx_sect = yes
+	}
+
+	modifier = {
+		planet_sxx_pills_makers_sxx_pills_produces_add = 0.1
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = physics
+				has_trait = leader_trait_expertise_field_manipulation
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 50
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = leader_trait_expertise_field_manipulation
+			}
+		}
+	}
+}
+
+tech_sxx_pills_making_3 = {
+	cost = @tier3cost3
+	area = physics
+	tier = 3
+	category = { field_manipulation }
+	prerequisites = { "tech_sxx_pills_making_2" }
+	weight = @tier3weight3
+
+	potential = {
+		is_sxx_sect = yes
+	}
+
+	modifier = {
+		planet_sxx_pills_makers_sxx_pills_produces_add = 0.1
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = physics
+				has_trait = leader_trait_expertise_field_manipulation
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 50
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = leader_trait_expertise_field_manipulation
+			}
+		}
+	}
+}
+
+tech_sxx_pills_making_4 = {
+	cost = @tier4cost3
+	area = physics
+	tier = 4
+	category = { field_manipulation }
+	prerequisites = { "tech_sxx_pills_making_3" }
+	weight = @tier4weight3
+
+	potential = {
+		is_sxx_sect = yes
+	}
+
+	modifier = {
+		planet_sxx_pills_makers_sxx_pills_produces_add = 0.1
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = physics
+				has_trait = leader_trait_expertise_field_manipulation
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 50
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = leader_trait_expertise_field_manipulation
+			}
+		}
+	}
+}
+
+tech_sxx_pills_making_5 = {
+	cost = @tier5cost3
+	area = physics
+	tier = 5
+	category = { field_manipulation }
+	prerequisites = { "tech_sxx_pills_making_4" }
+	weight = @tier5weight3
+
+	potential = {
+		is_sxx_sect = yes
+	}
+
+	modifier = {
+		planet_sxx_pills_makers_sxx_pills_produces_add = 0.1
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = physics
+				has_trait = leader_trait_expertise_field_manipulation
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 50
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = leader_trait_expertise_field_manipulation
+			}
+		}
+	}
+}
+
+tech_sxx_gene_template = {
+	cost = @tier3cost2
+	area = society
+	tier = 3
+	category = { biology }
+	prerequisites = { "tech_gene_tailoring" }
+	weight = @tier3weight2
+
+	potential = {
+		is_sxx_sect = yes
+	}
+
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_SXX_TEMPLATE_TITLE"
+			desc = "TECH_UNLOCK_SXX_TEMPLATE_DESC"
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_biology
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 50
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = leader_trait_expertise_biology
+			}
+		}
+	}
+}
+
+tech_sxx_xumi_1 = {
+	cost = @tier1cost3
+	area = engineering
+	tier = 1
+	category = { materials }
+	weight = @tier1weight3
+	is_rare = yes
+
+	potential = {
+		is_yuanying_country = yes
+	}
+
+	modifier = {
+		country_resource_max_add = 50000
+	}
+
+	weight_modifier = {
+		factor = 0.25
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_materials
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 50
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_materials
+			}
+		}
+	}
+}
+
+tech_sxx_xumi_2 = {
+	cost = @tier2cost3
+	area = engineering
+	tier = 2
+	category = { materials }
+	weight = @tier2weight3
+	is_rare = yes
+
+	potential = {
+		is_huashen_country = yes
+	}
+
+	modifier = {
+		country_resource_max_add = 500000
+	}
+
+	weight_modifier = {
+		factor = 0.25
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_materials
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 50
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_materials
+			}
+		}
+	}
+}
+
+tech_sxx_xumi_3 = {
+	cost = @tier3cost3
+	area = engineering
+	tier = 3
+	category = { materials }
+	weight = @tier3weight3
+	is_rare = yes
+
+	potential = {
+		is_lianxu_country = yes
+	}
+
+	modifier = {
+		country_resource_max_add = 5000000
+	}
+
+	weight_modifier = {
+		factor = 0.25
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_materials
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 50
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_materials
+			}
+		}
+	}
+}
+
+tech_sxx_xumi_4 = {
+	cost = @tier4cost3
+	area = engineering
+	tier = 4
+	category = { materials }
+	weight = @tier4weight3
+	is_rare = yes
+
+	potential = {
+		is_heti_country = yes
+	}
+
+	modifier = {
+		country_resource_max_add = 50000000
+	}
+
+	weight_modifier = {
+		factor = 0.25
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_materials
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 50
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_materials
+			}
+		}
+	}
+}
+
+tech_sxx_xumi_5 = {
+	cost = @tier5cost3
+	area = engineering
+	tier = 5
+	category = { materials }
+	weight = @tier5weight3
+	is_rare = yes
+
+	potential = {
+		is_dacheng_country = yes
+	}
+
+	modifier = {
+		country_resource_max_add = 500000000
+	}
+
+	weight_modifier = {
+		factor = 0.25
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_materials
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 50
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = leader_trait_expertise_materials
+			}
+		}
+	}
+}
+
+tech_sxx_star_furnace = {
+	area = physics
+	cost = @tier5cost3
+	tier = 5
+	category = { field_manipulation }
+	ai_update_type = all
+	prerequisites = { "tech_mega_engineering" }
+	weight = @tier5weight3
+	is_rare = yes
+
+	potential = {
+		is_heti_country = yes
+	}
+
+	weight_modifier = {
+		factor = 0.25
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_maniacal"
+			}
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_spark_of_genius"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp
+			}
+		}
+		modifier = {
+			factor = 6
+			has_ascension_perk = ap_master_builders
+		}
+		modifier = {
+			factor = 9
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_sxx_star_furnace }
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 100
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}

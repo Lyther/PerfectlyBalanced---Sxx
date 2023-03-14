@@ -1,0 +1,343 @@
+tech_repeatable_weapon_type_sxx_lingshi_damage_mul_5 = {
+	cost = 250000
+	cost_per_level = 25000
+	area = physics
+	tier = @repeatableTechTier
+	category = { particles }
+	ai_update_type = all
+	levels = -1
+	prerequisites = { "tech_sxx_lingshi_weapon_9" }
+	weight = @repeatableTechWeight
+
+	weight_modifier = {
+		factor = 0.5
+	}
+
+	potential = {
+        AND = {
+            is_dujie_country = yes
+            OR = {
+                has_policy_flag = pbsxx_repeatable_tech_all_enable
+                has_policy_flag = pbsxx_repeatable_tech_lingshi_damage_only
+            }
+            has_policy_flag = pbsxx_repeatable_tech_mul_5
+        }
+	}
+
+	ai_weight = {
+		factor = 1.5
+	}
+
+	weight_groups = {
+		repeatable
+	}
+
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+
+	modifier = {
+		weapon_type_sxx_lingshi_weapon_damage_mult = 0.25
+	}
+}
+
+tech_repeatable_weapon_type_sxx_lingshi_fire_rate_mul_5 = {
+	cost = 250000
+	cost_per_level = 25000
+	area = physics
+	tier = @repeatableTechTier
+	category = { particles }
+	ai_update_type = all
+	levels = -1
+	prerequisites = { "tech_sxx_lingshi_weapon_9" }
+	weight = @repeatableTechWeight
+
+	weight_modifier = {
+		factor = 0.5
+	}
+
+	potential = {
+        AND = {
+            is_dujie_country = yes
+            OR = {
+                has_policy_flag = pbsxx_repeatable_tech_all_enable
+                has_policy_flag = pbsxx_repeatable_tech_lingshi_fire_rate_only
+            }
+            has_policy_flag = pbsxx_repeatable_tech_mul_5
+        }
+	}
+
+	ai_weight = {
+		factor = 1.5
+	}
+
+	weight_groups = {
+		repeatable
+	}
+
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+
+	modifier = {
+		weapon_type_sxx_lingshi_weapon_fire_rate_mult = 0.25
+	}
+}
+
+tech_repeatable_weapon_type_sxx_lingshi_damage_mul_10 = {
+	cost = 500000
+	cost_per_level = 50000
+	area = physics
+	tier = @repeatableTechTier
+	category = { particles }
+	ai_update_type = all
+	levels = -1
+	prerequisites = { "tech_sxx_lingshi_weapon_9" }
+	weight = @repeatableTechWeight
+
+	weight_modifier = {
+		factor = 0.5
+	}
+
+	potential = {
+        AND = {
+            is_dujie_country = yes
+            OR = {
+                has_policy_flag = pbsxx_repeatable_tech_all_enable
+                has_policy_flag = pbsxx_repeatable_tech_lingshi_damage_only
+            }
+            has_policy_flag = pbsxx_repeatable_tech_mul_10
+        }
+	}
+
+	ai_weight = {
+		factor = 1.5
+	}
+
+	weight_groups = {
+		repeatable
+	}
+
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+
+	modifier = {
+		weapon_type_sxx_lingshi_weapon_damage_mult = 0.50
+	}
+}
+
+tech_repeatable_weapon_type_sxx_lingshi_fire_rate_mul_10 = {
+	cost = 500000
+	cost_per_level = 50000
+	area = physics
+	tier = @repeatableTechTier
+	category = { particles }
+	ai_update_type = all
+	levels = -1
+	prerequisites = { "tech_sxx_lingshi_weapon_9" }
+	weight = @repeatableTechWeight
+
+	weight_modifier = {
+		factor = 0.5
+	}
+
+	potential = {
+        AND = {
+            is_dujie_country = yes
+            OR = {
+                has_policy_flag = pbsxx_repeatable_tech_all_enable
+                has_policy_flag = pbsxx_repeatable_tech_lingshi_fire_rate_only
+            }
+            has_policy_flag = pbsxx_repeatable_tech_mul_10
+        }
+	}
+
+	ai_weight = {
+		factor = 1.5
+	}
+
+	weight_groups = {
+		repeatable
+	}
+
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+
+	modifier = {
+		weapon_type_sxx_lingshi_weapon_fire_rate_mult = 0.50
+	}
+}
+
+tech_repeatable_weapon_type_sxx_lingshi_damage_mul_25 = {
+	cost = 1250000
+	cost_per_level = 125000
+	area = physics
+	tier = @repeatableTechTier
+	category = { particles }
+	ai_update_type = all
+	levels = -1
+	prerequisites = { "tech_sxx_lingshi_weapon_9" }
+	weight = @repeatableTechWeight
+
+	weight_modifier = {
+		factor = 0.5
+	}
+
+	potential = {
+        AND = {
+            is_dujie_country = yes
+            OR = {
+                has_policy_flag = pbsxx_repeatable_tech_all_enable
+                has_policy_flag = pbsxx_repeatable_tech_lingshi_damage_only
+            }
+            has_policy_flag = pbsxx_repeatable_tech_mul_25
+        }
+	}
+
+	ai_weight = {
+		factor = 1.5
+	}
+
+	weight_groups = {
+		repeatable
+	}
+
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+
+	modifier = {
+		weapon_type_sxx_lingshi_weapon_damage_mult = 1.25
+	}
+}
+
+tech_repeatable_weapon_type_sxx_lingshi_fire_rate_mul_25 = {
+	cost = 1250000
+	cost_per_level = 125000
+	area = physics
+	tier = @repeatableTechTier
+	category = { particles }
+	ai_update_type = all
+	levels = -1
+	prerequisites = { "tech_sxx_lingshi_weapon_9" }
+	weight = @repeatableTechWeight
+
+	weight_modifier = {
+		factor = 0.5
+	}
+
+	potential = {
+        AND = {
+            is_dujie_country = yes
+            OR = {
+                has_policy_flag = pbsxx_repeatable_tech_all_enable
+                has_policy_flag = pbsxx_repeatable_tech_lingshi_fire_rate_only
+            }
+            has_policy_flag = pbsxx_repeatable_tech_mul_25
+        }
+	}
+
+	ai_weight = {
+		factor = 1.5
+	}
+
+	weight_groups = {
+		repeatable
+	}
+
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+
+	modifier = {
+		weapon_type_sxx_lingshi_weapon_fire_rate_mult = 1.25
+	}
+}
+
+tech_repeatable_weapon_type_sxx_lingshi_damage_mul_100 = {
+	cost = 5000000
+	cost_per_level = 500000
+	area = physics
+	tier = @repeatableTechTier
+	category = { particles }
+	ai_update_type = all
+	levels = -1
+	prerequisites = { "tech_sxx_lingshi_weapon_9" }
+	weight = @repeatableTechWeight
+
+	weight_modifier = {
+		factor = 0.5
+	}
+
+	potential = {
+        AND = {
+            is_dujie_country = yes
+            OR = {
+                has_policy_flag = pbsxx_repeatable_tech_all_enable
+                has_policy_flag = pbsxx_repeatable_tech_lingshi_damage_only
+            }
+            has_policy_flag = pbsxx_repeatable_tech_mul_100
+        }
+	}
+
+	ai_weight = {
+		factor = 1.5
+	}
+
+	weight_groups = {
+		repeatable
+	}
+
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+
+	modifier = {
+		weapon_type_sxx_lingshi_weapon_damage_mult = 5.00
+	}
+}
+
+tech_repeatable_weapon_type_sxx_lingshi_fire_rate_mul_100 = {
+	cost = 5000000
+	cost_per_level = 500000
+	area = physics
+	tier = @repeatableTechTier
+	category = { particles }
+	ai_update_type = all
+	levels = -1
+	prerequisites = { "tech_sxx_lingshi_weapon_9" }
+	weight = @repeatableTechWeight
+
+	weight_modifier = {
+		factor = 0.5
+	}
+
+	potential = {
+        AND = {
+            is_dujie_country = yes
+            OR = {
+                has_policy_flag = pbsxx_repeatable_tech_all_enable
+                has_policy_flag = pbsxx_repeatable_tech_lingshi_fire_rate_only
+            }
+            has_policy_flag = pbsxx_repeatable_tech_mul_100
+        }
+	}
+
+	ai_weight = {
+		factor = 1.5
+	}
+
+	weight_groups = {
+		repeatable
+	}
+
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+
+	modifier = {
+		weapon_type_sxx_lingshi_weapon_fire_rate_mult = 5.00
+	}
+}

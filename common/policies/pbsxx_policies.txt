@@ -87,3 +87,101 @@ pbsxx_disciple_job = {
         }
     }
 }
+
+pbsxx_repeatable_tech_enable = {
+    potential = {
+        is_ai = no
+        is_sxx_sect = yes
+    }
+    allow = {
+        is_ai = no
+    }
+    option = {
+        name = "pbsxx_repeatable_tech_all"
+        policy_flags = {
+            pbsxx_repeatable_tech_all_enable
+        }
+        modifier = {
+        }
+        AI_weight = {
+            factor = 100
+        }
+    }
+    option = {
+        name = "pbsxx_repeatable_tech_lingshi_damage_enable"
+        policy_flags = {
+            pbsxx_repeatable_tech_lingshi_damage_only
+        }
+        modifier = {
+        }
+    }
+    option = {
+        name = "pbsxx_repeatable_tech_lingshi_fire_rate_enable"
+        policy_flags = {
+            pbsxx_repeatable_tech_lingshi_fire_rate_only
+        }
+        modifier = {
+        }
+    }
+    option = {
+        name = "pbsxx_repeatable_tech_none"
+        policy_flags = {
+            pbsxx_repeatable_tech_none_enable
+        }
+        modifier = {
+        }
+    }
+}
+
+pbsxx_repeatable_tech_multiple = {
+    potential = {
+        is_ai = no
+        is_sxx_sect = yes
+    }
+    allow = {
+        is_ai = no
+    }
+    option = {
+        name = "pbsxx_repeatable_tech_mul_default"
+        policy_flags = {
+            pbsxx_repeatable_tech_mul_1
+        }
+        modifier = {
+        }
+        AI_weight = {
+            factor = 100
+        }
+    }
+    option = {
+        name = "pbsxx_repeatable_tech_mul_plus"
+        policy_flags = {
+            pbsxx_repeatable_tech_mul_5
+        }
+        modifier = {
+        }
+    }
+    option = {
+        name = "pbsxx_repeatable_tech_mul_pro"
+        policy_flags = {
+            pbsxx_repeatable_tech_mul_10
+        }
+        modifier = {
+        }
+    }
+    option = {
+        name = "pbsxx_repeatable_tech_mul_max"
+        policy_flags = {
+            pbsxx_repeatable_tech_mul_25
+        }
+        modifier = {
+        }
+    }
+    option = {
+        name = "pbsxx_repeatable_tech_mul_ultra"
+        policy_flags = {
+            pbsxx_repeatable_tech_mul_100
+        }
+        modifier = {
+        }
+    }
+}
