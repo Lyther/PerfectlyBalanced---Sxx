@@ -1,0 +1,323 @@
+district_sxx_heaven_base = {
+	base_buildtime = 3600
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = sxx_heaven
+		from = { is_sxx_heaven_country = yes }
+	}
+
+	potential = {
+		uses_district_set = sxx_heaven
+		exists = owner
+		owner = { is_sxx_heaven_country = yes }
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			energy = 10000
+			minerals = 10000
+			alloys = 5000
+			sxx_stones = 20000
+		}
+		upkeep = {
+			energy = 20
+			sxx_stones = 20
+		}
+	}
+
+	planet_modifier = {
+		planet_max_districts_add = 2
+		planet_housing_add = 50
+		planet_amenities_add = 50
+		sxx_heaven_stability_add = 5
+	}
+}
+
+# 天枢 贪狼
+district_sxx_heaven_tanlang = {
+	base_buildtime = 1800
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = sxx_heaven
+		from = { is_sxx_heaven_country = yes }
+	}
+
+	potential = {
+		uses_district_set = sxx_heaven
+		exists = owner
+		owner = { is_sxx_heaven_country = yes }
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			energy = 5000
+			minerals = 5000
+			alloys = 2500
+			sxx_stones = 20000
+		}
+		upkeep = {
+			energy = 10
+			sxx_stones = 10
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 20
+		planet_amenities_add = 20
+		job_sxx_fairy_tanlang_add = 10
+	}
+
+	triggered_desc = {
+		text = job_sxx_fairy_tanlang_effect_desc
+	}
+}
+
+# 天璇 巨门
+district_sxx_heaven_jumen = {
+	base_buildtime = 1800
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = sxx_heaven
+		from = { is_sxx_heaven_country = yes }
+	}
+
+	potential = {
+		uses_district_set = sxx_heaven
+		exists = owner
+		owner = { is_sxx_heaven_country = yes }
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			energy = 5000
+			minerals = 5000
+			alloys = 2500
+			sxx_stones = 20000
+		}
+		upkeep = {
+			energy = 10
+			sxx_stones = 10
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 20
+		planet_amenities_add = 20
+		job_sxx_fairy_jumen_add = 10
+	}
+
+	triggered_desc = {
+		text = job_sxx_fairy_jumen_effect_desc
+	}
+}
+
+# 天玑 禄存
+district_sxx_heaven_lucun = {
+	base_buildtime = 1800
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = sxx_heaven
+		from = { is_sxx_heaven_country = yes }
+	}
+
+	potential = {
+		uses_district_set = sxx_heaven
+		exists = owner
+		owner = { is_sxx_heaven_country = yes }
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			energy = 5000
+			minerals = 5000
+			alloys = 2500
+			sxx_stones = 20000
+		}
+		upkeep = {
+			energy = 10
+			sxx_stones = 10
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 20
+		planet_amenities_add = 20
+		job_sxx_fairy_lucun_add = 10
+	}
+
+	triggered_desc = {
+		text = job_sxx_fairy_lucun_effect_desc
+	}
+}
+
+# 天权 文曲
+district_sxx_heaven_wenqu = {
+	base_buildtime = 1800
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = sxx_heaven
+		from = { is_sxx_heaven_country = yes }
+	}
+
+	potential = {
+		uses_district_set = sxx_heaven
+		exists = owner
+		owner = { is_sxx_heaven_country = yes }
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			energy = 5000
+			minerals = 5000
+			alloys = 2500
+			sxx_stones = 20000
+		}
+		upkeep = {
+			energy = 10
+			sxx_stones = 10
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 20
+		planet_amenities_add = 20
+		job_sxx_fairy_wenqu_add = 10
+	}
+
+	triggered_desc = {
+		text = job_sxx_fairy_wenqu_effect_desc
+	}
+}
+
+# 玉衡 廉贞
+district_sxx_heaven_lianzhen = {
+	base_buildtime = 1800
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = sxx_heaven
+		from = { is_sxx_heaven_country = yes }
+	}
+
+	potential = {
+		uses_district_set = sxx_heaven
+		exists = owner
+		owner = { is_sxx_heaven_country = yes }
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			energy = 5000
+			minerals = 5000
+			alloys = 2500
+			sxx_stones = 20000
+		}
+		upkeep = {
+			energy = 10
+			sxx_stones = 10
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 20
+		planet_amenities_add = 20
+		job_sxx_fairy_lianzhen_add = 10
+	}
+
+	triggered_desc = {
+		text = job_sxx_fairy_lianzhen_effect_desc
+	}
+}
+
+# 开阳 武曲
+district_sxx_heaven_wuqu = {
+	base_buildtime = 1800
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = sxx_heaven
+		from = { is_sxx_heaven_country = yes }
+	}
+
+	potential = {
+		uses_district_set = sxx_heaven
+		exists = owner
+		owner = { is_sxx_heaven_country = yes }
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			energy = 5000
+			minerals = 5000
+			alloys = 2500
+			sxx_stones = 20000
+		}
+		upkeep = {
+			energy = 10
+			sxx_stones = 10
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 20
+		planet_amenities_add = 20
+		job_sxx_fairy_wuqu_add = 10
+	}
+
+	triggered_desc = {
+		text = job_sxx_fairy_wuqu_effect_desc
+	}
+}
+
+# 摇光 破军
+district_sxx_heaven_pojun = {
+	base_buildtime = 1800
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = sxx_heaven
+		from = { is_sxx_heaven_country = yes }
+	}
+
+	potential = {
+		uses_district_set = sxx_heaven
+		exists = owner
+		owner = { is_sxx_heaven_country = yes }
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			energy = 5000
+			minerals = 5000
+			alloys = 2500
+			sxx_stones = 20000
+		}
+		upkeep = {
+			energy = 10
+			sxx_stones = 10
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 20
+		planet_amenities_add = 20
+		job_sxx_fairy_pojun_add = 10
+	}
+
+	triggered_desc = {
+		text = job_sxx_fairy_pojun_effect_desc
+	}
+}
